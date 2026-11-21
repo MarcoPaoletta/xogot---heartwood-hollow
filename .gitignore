@@ -9,7 +9,7 @@
 # Private game-dev authoring skill, installed locally, never committed or published (Marco, 2026-10-07)
 /skills/
 
-# Agent tooling installed per machine (external agent skills and local agent settings)
+# Agent tooling installed per machine (Xogot's xogot skill for Antigravity in .agents/skills/, local agent settings)
 /.agents/
 /.gemini/
 /.claude/settings.local.json

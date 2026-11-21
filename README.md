@@ -3,7 +3,7 @@
 A cozy third person narrative adventure in one giant forest, built for Xogot video 10 (Xogot x Letta Corporation). Wren, a young courier with a brass lantern and a wooden sword, walks into the Great Wood to find out why the Heartseed went dark. Raise the lantern to calm monsters, bonk the grumpy ones, and make three choices that change the forest, the village and the ending.
 
 - **Engine:** [Xogot for Mac](https://xogot.com/mac) 4.8 (Godot 4.8), Mobile renderer. The base project is stamped 4.7; Xogot converts it once on the first open.
-- **Builder:** Gemini 4 Neon as Xogot for Mac's own built in agent (the Coding Assistant, provider Google AI).
+- **Builder:** Gemini 4 Neon at its maximum effort in Google Antigravity, driving Xogot for Mac and Xogot Modeler through Xogot's `xo` command line (including `xo modeler`).
 - **Models:** the hero assets (sword, lantern, rocks, trees, capelet, the Heartwood, the Heartseed, the bridge, the honey pot, the shield) are modeled inside this project with Xogot Modeler. Characters, monsters and supporting props come from free CC0 packs.
 
 ## State
@@ -23,7 +23,7 @@ The full spec is `docs/GDD.md` (PDF in `docs/GDD.pdf`, concepts in `docs/concept
 3. An acceptance test per pillar and per non-trivial mechanic.
 4. Scope written down: what is not built, a numbered build order where each step ends with a run, a screenshot check and a commit.
 5. Versioned after each round of play by adding a superseding section; the first build is one prompt (`docs/KICKOFF_PROMPT.md`).
-6. Iterate with screenshots, and the agent takes its own with Xogot's tools before reporting back.
+6. Iterate with screenshots, and the agent takes its own through `xo` before reporting back.
 
 ## Repo layout
 

@@ -1,6 +1,6 @@
 ---
 title: "Heartwood Hollow: Build GDD"
-subtitle: "Xogot x Letta Corporation, video 10 (Xogot for Mac). Gemini 4 Neon builds the whole game inside Xogot for Mac with Xogot's built in agent, and models the hero assets itself with Xogot Modeler."
+subtitle: "Xogot x Letta Corporation, video 10 (Xogot for Mac). Gemini 4 Neon, running in Google Antigravity, builds the whole game in Xogot for Mac through Xogot's `xo` command line, and models the hero assets itself with Xogot Modeler through `xo modeler`."
 ---
 
 # Heartwood Hollow
@@ -10,7 +10,7 @@ A cozy third person narrative adventure in one giant, continuous forest. The Hea
 | Item | Value |
 | :-- | :-- |
 | Video | Xogot video 10, long form 16:9 plus a short: the last video of the Xogot for Mac agreement. The products shown are **Xogot for Mac with its built in AI agent** and **Xogot Modeler**, the modeling extension of Xogot. |
-| Builder | Gemini 4 Neon, inside Xogot for Mac, through Xogot's built in agent (the Coding Assistant: Settings > AI > Built-in AI, provider Google AI with an API key, model Gemini 4 Neon). One autonomous run. |
+| Builder | Gemini 4 Neon at its maximum effort (Extra) in Google Antigravity, driving Xogot for Mac and Xogot Modeler through Xogot's `xo` command line (including `xo modeler`) and its `xogot` skill, installed from Xogot (External Agents, Codex, project scope) in `.agents/skills/xogot/SKILL.md`. One autonomous run. |
 | Engine | Xogot for Mac 4.8 (Godot 4.8), Mobile renderer, macOS desktop. The base project was prepared stamped 4.7, because no stable 4.8 build existed to validate it on: let Xogot convert it once on the first open, then never change the version stamp again. |
 | Models | **The hero assets of Section 1 are modeled by you, inside this project, with Xogot Modeler.** Characters, monsters, ground cover, ruins and village pieces come from free CC0 Quaternius packs imported at setup (Section 10). |
 | Input | Keyboard and mouse |
@@ -55,13 +55,13 @@ The video shows about 60 to 90 seconds of gameplay plus the modeling, so quality
 5. **The whole world exists as named editable nodes inside the saved scenes before Play. Every game element has its own reusable source scene, with focused behavior, and levels compose instances of those scenes.** Terrain, paths, trees, rocks, props, characters, monsters, cameras, lighting and UI are all repositionable and resizable by Marco from the Inspector while recording. Spawnable elements have saved source scenes he can open before Play. Nothing required is assembled by a script at run time, because a world that only exists after Play cannot be touched on camera.
 6. Keep it cozy and cute: no blood, no death, no game over. Monsters poof into sparkles and run away; at zero hearts Wren faints and wakes at the last campfire with full hearts.
 7. **Build the whole game end to end without stopping and without asking whether to continue.** Verifying is something you do, not something you ask. The only valid stop is a genuine external blocker (the editor or the Modeler cannot be reached at all after you retried). A Modeler problem is not a reason to stop: follow Section 1.8 and keep going. Give one report at the end.
-8. Use only Xogot's own tools and its built in agent tools, including its native Modeler tools. Do not install or connect any other editor bridge, MCP server or plugin.
+8. Use only Xogot's own tools: the `xo` command line of Xogot for Mac (including `xo modeler`) and its `xogot` skill. Do not install or connect any other editor bridge, MCP server or plugin.
 
 ## 0. The builder and the tools
 
 | Piece | What |
 | :-- | :-- |
-| You | Gemini 4 Neon, running as Xogot for Mac's built in agent (the Coding Assistant, provider Google AI), with the project open in Xogot for Mac. You use the Modeler natively through your built in tools. |
+| You | Gemini 4 Neon in Google Antigravity, with the project open in Xogot for Mac. You drive the editor, the running game and the Modeler with `xo` (start with `xo doctor` and `xo list`; the `xogot` skill in `.agents/skills/xogot/SKILL.md` documents every command, `xo modeler` included). |
 | Xogot Modeler | The modeling extension inside Xogot: polygon modeling on a `MeshInstance3D` directly in the editor. Known features (from the Xogot Modeler beta README and our earlier Modeler videos; the names in your Xogot build may differ, use what your tools expose and log the real names in `docs/MODELER_LOG.md`): add a shape (box, cylinder, plane, Bezier Plane, Bezier Block, and presets such as Stairs, Arch and Door), Object, Vertex, Edge and Face modes, extrude by dragging with Shift, an Actions menu (bevel and other operations, with settings in the bottom panel), soft selection, X ray, Paint to assign a material per face, Mesh UV, and collision commands in the inspector's Editable Mesh section. It saves standard `ArrayMesh` data, so the game never needs the Modeler to run. |
 | The game dev skill | `skills/game-dev/SKILL.md` plus its `references/` (quick gameplay, concept match, player controller, third person camera, gear mount, menu camera cuts, level props, launch settings, z fighting). It holds the quality bar. This GDD wins where they differ. |
 | Concept images | `docs/concept/heartwood-hollow-1.png` (the path), `-2.png` (the bridge), `-3.png` (the Heart chamber). |
