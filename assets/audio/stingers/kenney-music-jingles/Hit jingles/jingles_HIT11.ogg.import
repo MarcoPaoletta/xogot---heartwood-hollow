@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://drcmrd4fhybgf"
+path="res://.godot/imported/jingles_HIT11.ogg-660196b089716c33f04721e78e2cf8d9.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/stingers/kenney-music-jingles/Hit jingles/jingles_HIT11.ogg"
+dest_files=["res://.godot/imported/jingles_HIT11.ogg-660196b089716c33f04721e78e2cf8d9.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

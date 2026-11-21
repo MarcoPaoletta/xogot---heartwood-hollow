@@ -1,0 +1,33 @@
+# Godot cache and builds
+.godot/
+.import/
+/build/
+/export/
+*.tmp
+*.log
+
+# Private game-dev authoring skill, installed locally, never committed or published (Marco, 2026-10-07)
+/skills/
+
+# Agent tooling installed per machine (Xogot's xogot skill for Codex/Antigravity, local agent settings)
+/.agents/
+/.gemini/
+/.claude/settings.local.json
+/.claude/skills/
+
+# Credentials and secrets
+.env
+.env.*
+*.pem
+*.key
+credentials*.json
+service-account*.json
+
+# OS noise
+.DS_Store
+Thumbs.db
+desktop.ini
+# Private game-dev authoring skill, local only (Marco, 2026-10-07)
+/skills/game-dev/
+/skills/godot-game-dev/
+/skills/README.md

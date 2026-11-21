@@ -1,0 +1,876 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+[ DONE ] first_scan_filesystem
+
+[ DONE ] _update_scan_actions
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+ERROR: Condition "surfaces.is_empty()" is true. Returning: Ref<ArrayMesh>()
+   at: get_mesh (scene/resources/3d/importer_mesh.cpp:860)
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] import
+
+[ DONE ] reimport
+
+[ DONE ] reimport
+
+[ DONE ] loading_editor_layout
+

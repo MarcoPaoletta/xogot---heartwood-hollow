@@ -1,0 +1,11 @@
+Cute Animated Monsters Pack by Quaternius (https://quaternius.com/packs/cutemonsters.html)
+
+The download (Google Drive folder linked from that page) ships without a license file.
+The pack page states: License CC0.
+
+License:
+CC0 1.0 Universal (CC0 1.0)
+Public Domain Dedication
+https://creativecommons.org/publicdomain/zero/1.0/
+
+Note added by Letta Corporation on 2026-11-21 when the glTF files were imported.
