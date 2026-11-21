@@ -11,8 +11,15 @@ config_version=5
 [application]
 
 config/name="Heartwood Hollow"
-config/features=PackedStringArray("4.7", "Mobile")
+config/features=PackedStringArray("4.8", "Mobile")
 
 [rendering]
 
 renderer/rendering_method="mobile"
+
+[xogot]
+
+project/editorState=[]
+project/shaderEditorState=[]
+project/breakpoints={}
+project/disabled_breakpoints={}
