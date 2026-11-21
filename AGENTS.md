@@ -1,19 +1,18 @@
 # AGENTS.md: Heartwood Hollow
 
-Read this whole file before you touch the project. It applies to every agent (Antigravity, Codex, Claude or any other).
+Read this whole file before you touch the project. It applies to every agent (Xogot's built in agent, Codex, Claude or any other).
 
 ## What this is
 
 Heartwood Hollow, a cozy third person narrative adventure in one giant forest: Wren, a courier with a brass lantern and a wooden sword, four zones, two decisions with two branches each, three endings. It is Xogot video 10 (Xogot x Letta Corporation).
 
 - **Engine: Xogot for Mac 4.8 (Godot 4.8), Mobile renderer, macOS.** The base project was prepared stamped `4.7` (`config/features` in `project.godot`) because no stable Godot 4.8 build existed to validate it on Windows. Xogot for Mac 4.8 converts it on the first open; accept that once and never change the version stamp again. Never open this project in a different desktop Godot.
-- **Builder: Gemini 4 Neon (Extra effort) in Google Antigravity**, driving Xogot for Mac through Xogot's `xo` command line. Antigravity reads Xogot's own skill from `.agents/skills/xogot/SKILL.md` (installed by Xogot on the Mac from Editor Settings > AI > External Agents, Codex, scope Project). Use only Xogot's own tools: `xo` (including `xo modeler`). No other editor bridge, MCP server or plugin.
+- **Builder: Gemini 4 Neon as Xogot for Mac's own built in agent** (the Coding Assistant: Settings > AI > Built-in AI, provider Google AI with an API key, model Gemini 4 Neon). It works inside the editor with Xogot's built in tools and uses Xogot Modeler natively. Use only Xogot's own tools: no other editor bridge, MCP server or plugin.
 
 ## Read first, in this order
 
 1. `skills/game-dev/SKILL.md` and the references it names: the game dev skill. It is a local, private copy that is never committed (see Privacy). On the Mac: `git -C ~/Skills/game-dev pull` and `python3 ~/Skills/game-dev/install_to_project.py "<this project>"`.
 2. `docs/GDD.md`: the build contract (the PDF is `docs/GDD.pdf`, the concepts are in `docs/concept/`, one reference crop per Modeler asset in `docs/concept/refs/`). Where the GDD and the skill differ, the GDD wins.
-3. `.agents/skills/xogot/SKILL.md`: every `xo` command, including `xo modeler`.
 
 The kickoff prompt is `docs/KICKOFF_PROMPT.md`: read the GDD and the skill, then build the complete game.
 
