@@ -1,0 +1,9 @@
+[gd_resource type="FontVariation" format=3 uid="uid://y0vvu8ux5q5f"]
+
+[ext_resource type="FontFile" uid="uid://b28kudhmsckx5" path="res://assets/fonts/Fredoka-Variable.ttf" id="1_tehgo"]
+
+[resource]
+base_font = ExtResource("1_tehgo")
+variation_opentype = {
+2003265652: 700
+}

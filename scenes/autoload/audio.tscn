@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://byl3w71ik0ifl"]
+
+[ext_resource type="Script" uid="uid://dh0gap7q1niuv" path="res://scripts/autoload/audio.gd" id="1_a4rpi"]
+
+[node name="Audio" type="Node" unique_id=685267553]
+script = ExtResource("1_a4rpi")
+
+[node name="MusicA" type="AudioStreamPlayer" parent="." unique_id=1943454243]
+
+[node name="MusicB" type="AudioStreamPlayer" parent="." unique_id=652826230]
+
+[node name="AmbienceForest" type="AudioStreamPlayer" parent="." unique_id=1764339850]
+
+[node name="AmbienceRiver" type="AudioStreamPlayer" parent="." unique_id=667025218]
+
+[node name="AmbienceBirds" type="AudioStreamPlayer" parent="." unique_id=269204773]
+
+[node name="LanternHum" type="AudioStreamPlayer" parent="." unique_id=1164812237]
+
+[node name="StingerPlayer" type="AudioStreamPlayer" parent="." unique_id=1279349286]
+
+[node name="SfxPool" type="Node" parent="." unique_id=82738229]
+
+[node name="Sfx01" type="AudioStreamPlayer" parent="SfxPool" unique_id=335906388]
+
+[node name="Sfx02" type="AudioStreamPlayer" parent="SfxPool" unique_id=984928709]
+
+[node name="Sfx03" type="AudioStreamPlayer" parent="SfxPool" unique_id=799121626]
+
+[node name="Sfx04" type="AudioStreamPlayer" parent="SfxPool" unique_id=1551534625]
+
+[node name="Sfx05" type="AudioStreamPlayer" parent="SfxPool" unique_id=460374504]
+
+[node name="Sfx06" type="AudioStreamPlayer" parent="SfxPool" unique_id=1570487051]
+
+[node name="Sfx07" type="AudioStreamPlayer" parent="SfxPool" unique_id=628160182]
+
+[node name="Sfx08" type="AudioStreamPlayer" parent="SfxPool" unique_id=1352107521]
+
+[node name="Sfx09" type="AudioStreamPlayer" parent="SfxPool" unique_id=1733283435]
+
+[node name="Sfx10" type="AudioStreamPlayer" parent="SfxPool" unique_id=1863462136]
+
+[node name="Sfx11" type="AudioStreamPlayer" parent="SfxPool" unique_id=1368329697]
+
+[node name="Sfx12" type="AudioStreamPlayer" parent="SfxPool" unique_id=633257583]
+
+[node name="Sfx13" type="AudioStreamPlayer" parent="SfxPool" unique_id=574995720]
+
+[node name="Sfx14" type="AudioStreamPlayer" parent="SfxPool" unique_id=788486034]
+
+[node name="Sfx15" type="AudioStreamPlayer" parent="SfxPool" unique_id=875946306]
+
+[node name="Sfx16" type="AudioStreamPlayer" parent="SfxPool" unique_id=1416626097]
