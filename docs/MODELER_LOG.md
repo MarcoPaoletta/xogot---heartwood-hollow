@@ -6,6 +6,17 @@ Heartwood Hollow, Xogot video 10. Kept by the builder while the game is built (G
 
 Every Modeler problem goes here the moment it happens, newest first, and is also posted in the chat as one line starting with `MODELER ISSUE:`. One entry per problem: time, asset ID, operation, what was expected, what happened (exact error text or symptom), whether it reproduces, the workaround, the time lost, and a screenshot path in `docs/evidence/modeler/issues/`. If no issue happened, write one line saying so.
 
+### Issue 03 — `xo modeler action <node> setCollider` hides visual mesh (collider-only role)
+- **Time:** 2026-11-22 20:17 -03:00
+- **Asset ID:** M06 (`m06_heartwood`)
+- **Operation:** `xo modeler action /Mesh setCollider --mode object`
+- **Expected:** Add collision to visible `/Mesh` while keeping the mesh rendered.
+- **What happened:** `setCollider` converts the Modeler node's `collision_role` to `"collider"`, hiding the mesh geometry at runtime (`m06_heartwood-r01.png` rendered canopy only).
+- **Reproduces:** Yes (by design as a collider-volume role, though easy to confuse with enabling collision on a visible mesh).
+- **Workaround:** Pass `--collision trimesh` (or `convex`/`box`/`mesh`) on `xo modeler create`, which creates a visible mesh WITH `ModelerCollision/CollisionShape3D` intact across merges.
+- **Time lost:** ~3 minutes
+- **Screenshot:** `docs/evidence/modeler/m06_heartwood-r01.png`
+
 ### Issue 02 — `xo modeler create --type torus` rejects small-scale rings (0.06 m)
 - **Time:** 2026-11-22 19:26 -03:00
 - **Asset ID:** M02 (`m02_brass_lantern`)
@@ -63,6 +74,10 @@ One row per round (GDD Section 1.4): asset, round, review sheet path, what chang
 | M05 Wren's Capelet | 6 | `docs/evidence/modeler/m05_capelet-r06.png` | Snapped emblem toward back face center/normal (`452 tris`). | Back center ridge split emblem pieces under individual-pivot rotation. |
 | M05 Wren's Capelet | 7 | `docs/evidence/modeler/m05_capelet-r07.png` | Tested 15-deg Y-rotated pipe for flat back panel (`452 tris`). | Y-rotation skewed asymmetric oval width (`0.587 m`); emblem still recessed. |
 | M05 Wren's Capelet | 8 | `docs/evidence/modeler/m05_capelet-r08.png` | Restored symmetric `0.623 m` oval and merged all 4 emblem pieces into one rigid unified mesh placed along measured back ridge (`452 tris`). | Finalized as-is per user directive to move directly to M06 Heartwood and playable game. |
+| M06 The Heartwood | 1 | `docs/evidence/modeler/m06_heartwood-r01.png` | Full 45 m Heartwood sculpted (`10,476 tris`): furrowed trunk, twisted strands, diamond socket, 6 root arches + moss, 8 boughs, 15 canopy clusters. | `setCollider` hid `/Mesh` (Issue 03), leaving only canopy visible; workshop backdrop wall clipped tree. |
+| M06 The Heartwood | 2 | `docs/evidence/modeler/m06_heartwood-r02.png` | Switched `/Mesh` to `--collision trimesh` (visible + ModelerCollision) and hid workshop backdrop for >10 m assets (`10,476 tris`). | Diamond socket recessed behind trunk flare & front roots; roots bent in straight segments (missing smooth Bezier tangents); moss buried inside roots. |
+| M06 The Heartwood | 3 | `docs/evidence/modeler/m06_heartwood-r03.png` | Added smooth Catmull-Rom Bezier tangents to all 6 soaring root arches (`±38°/±84°/±138°`), opened unobstructed front diamond socket at `Y=9.2 m`, lifted moss caps proudly on arches, expanded billowing 16-lobe crown (`12,532 tris`). | Socket rim & framing strands can protrude bolder for 180 m readability; moss cushions slightly thin. |
+| M06 The Heartwood | 4 | `docs/evidence/modeler/m06_heartwood-r04.png` | Enlarged protruding diamond socket (`Y=10.0 m`, `Z=6.25..7.6 m`) framed by thicker twisted strands, thickened lush multi-tone moss caps over all 6 soaring root arches (`12,532 tris`, `45.0 m` tall). | None — all M06 workshop criteria pass. |
 
 ## Criteria check per asset
 
@@ -87,6 +102,16 @@ One row per round (GDD Section 1.4): asset, round, review sheet path, what chang
 - Triangles: `452` (target `300–800`).
 - Palette: `#DE642B` outer orange mantle, `#B4491D` inner lining & underside, `#F4E3C8` crisp uniform cream hem trim band & raised two-leaf emblem.
 - Note: User directed finishing M05 as-is, modeling only M06 next, holding M03/M04/M07–M10, and moving straight to building the playable game.
+
+### M06 The Heartwood (Tier B — 4 rounds) — PASS
+- Size: `48.200 x 46.183 x 40.450 m` (`max_y = 45.0 m` exact, 36 m root arch span, 44 m crown width).
+- Triangles: `12,532` (target `6,000–15,000`).
+- Pivot & orientation: trunk center at ground level `(0,0,0)`, diamond Heartseed socket faces `+Z` (south toward Thistle).
+- Collision: Modeler trimesh (`ModelerCollision`) on `/Mesh` (trunk + all 6 walkable root arches); `/Canopy` carries no collision.
+- Palette: `#5E3822` heartwood bark, `#3A2418` socket hollow/grooves, `#6B4026` highlights, `#8FB22F`/`#B5D040` moss caps, 3-tone foliage (`#3F5E17`, `#6F9A2A`, `#A8C93E`).
+
+### On-Hold Modeler Assets (Per User Directive, 2026-11-22 20:07)
+- **M03 (Mossy rocks), M04 (Old forest trees), M07 (Heartseed & shard), M08 (River bridge), M09 (Honey pot), M10 (Guard's shield):** Put on hold per explicit user instruction (*"Put M07 to M10 on hold for now, skip them. After the Heartwood, move on to building the game with the models you already have... I want to see them in action in the game."*). Zero pack models of Modeler categories are substituted.
 
 ## What worked especially well
 

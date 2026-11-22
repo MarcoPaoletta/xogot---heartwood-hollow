@@ -224,6 +224,8 @@ func count_specimen_triangles() -> int:
 func frame_review_cameras(aabb: AABB, gameplay_dist: float = 3.5, far_dist: float = 8.0) -> void:
 	var center: Vector3 = aabb.get_center()
 	var max_dim: float = maxf(maxf(aabb.size.x, aabb.size.y), maxf(aabb.size.z, 0.2))
+	if backdrop != null:
+		backdrop.visible = max_dim < 10.0
 	var radius: float = maxf(aabb.size.length() * 0.5, 0.15)
 	# Fit full height comfortably inside 40 deg vertical FOV (tan(20 deg) = 0.364) with ~28% margin
 	var dist: float = maxf(max_dim * 2.05, radius * 2.85)
