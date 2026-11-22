@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="WeaponMountProfile" format=3 uid="uid://21rgesvjecep"]
+
+[ext_resource type="Script" uid="uid://i7r1swxhqv40" path="res://scripts/resources/weapon_mount_profile.gd" id="1_vbjk3"]
+
+[resource]
+script = ExtResource("1_vbjk3")
+position_offset = Vector3(0, 0.285, -0.025)
+rotation_degrees_offset = Vector3(0, 180, 0)
+scale_factor = Vector3(0.95, 0.9, 0.98)

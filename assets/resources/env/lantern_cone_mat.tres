@@ -1,0 +1,9 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://cu6l8vko7xvgb"]
+
+[ext_resource type="Shader" uid="uid://dl6lt105uuy1r" path="res://assets/shaders/lantern_cone.gdshader" id="1_i3s3v"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_i3s3v")
+shader_parameter/cone_color = Color(1, 0.8901961, 0.47058824, 1)
+shader_parameter/intensity = 0.0

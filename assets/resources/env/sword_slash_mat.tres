@@ -1,0 +1,10 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://n07jscvgsdwh"]
+
+[ext_resource type="Shader" uid="uid://4o1qybhbl3x5" path="res://assets/shaders/sword_slash.gdshader" id="1_ifsia"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_ifsia")
+shader_parameter/slash_color = Color(1, 0.9411765, 0.6901961, 1)
+shader_parameter/progress = 0.0
+shader_parameter/opacity = 0.0

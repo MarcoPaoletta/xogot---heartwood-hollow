@@ -1,0 +1,169 @@
+[gd_scene format=3 uid="uid://bky5puq0fnl4t"]
+
+[ext_resource type="Script" uid="uid://bgdgf5qbwowfe" path="res://scripts/actors/wren.gd" id="1_8dxyc"]
+[ext_resource type="PackedScene" uid="uid://do6fmra26bspo" path="res://assets/quaternius/rpg-character-pack/glTF/Rogue.gltf" id="2_si4vs"]
+[ext_resource type="Script" uid="uid://ns7k2ifdtd65" path="res://scripts/actors/gear_mount.gd" id="3_755b2"]
+[ext_resource type="Resource" uid="uid://21rgesvjecep" path="res://assets/resources/mounts/capelet_mount.tres" id="4_2qpye"]
+[ext_resource type="PackedScene" uid="uid://bru5dtslk5gdd" path="res://assets/modeler/m05_capelet/m05_capelet.tscn" id="5_eovqd"]
+[ext_resource type="Resource" uid="uid://brbvaedv4cw7r" path="res://assets/resources/mounts/sword_mount.tres" id="6_qwk4c"]
+[ext_resource type="PackedScene" uid="uid://e40k1m6p2ous" path="res://assets/modeler/m01_wooden_sword/m01_wooden_sword.tscn" id="7_nnkt7"]
+[ext_resource type="Resource" uid="uid://cxxe1xvnbdm21" path="res://assets/resources/mounts/lantern_hip_mount.tres" id="8_acpm3"]
+[ext_resource type="PackedScene" uid="uid://dvc2w5erf6vhe" path="res://assets/modeler/m02_brass_lantern/m02_brass_lantern.tscn" id="9_0cq61"]
+[ext_resource type="Material" uid="uid://cu6l8vko7xvgb" path="res://assets/resources/env/lantern_cone_mat.tres" id="10_a46qh"]
+[ext_resource type="Material" uid="uid://cvlwtcovjejoj" path="res://assets/resources/env/lantern_mote_proc.tres" id="11_r7lv3"]
+[ext_resource type="SphereMesh" uid="uid://sfwf1adpumwp" path="res://assets/resources/env/sparkle_dot_mesh.tres" id="12_i4kmo"]
+[ext_resource type="Material" uid="uid://n07jscvgsdwh" path="res://assets/resources/env/sword_slash_mat.tres" id="13_asqlp"]
+[ext_resource type="Script" uid="uid://bgdmn3gbvl6uy" path="res://scripts/camera/player_camera.gd" id="14_8vyhe"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_l27jn"]
+radius = 0.3
+height = 1.48
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_4p845"]
+top_radius = 0.14
+bottom_radius = 3.1
+height = 6.0
+radial_segments = 24
+cap_top = false
+cap_bottom = false
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_0mwch"]
+height = 6.0
+radius = 2.4
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_depnx"]
+size = Vector3(1.85, 1.35, 1.75)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_0nftv"]
+size = Vector2(2.2, 2.2)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_qndds"]
+radius = 2.6
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_d7nor"]
+radius = 0.25
+
+[node name="Wren" type="CharacterBody3D" unique_id=38665821]
+collision_layer = 2
+collision_mask = 13
+floor_max_angle = 0.82
+script = ExtResource("1_8dxyc")
+
+[node name="BodyCollider" type="CollisionShape3D" parent="." unique_id=241956756]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75, 0)
+shape = SubResource("CapsuleShape3D_l27jn")
+
+[node name="VisualRoot" type="Node3D" parent="." unique_id=1703652901]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
+
+[node name="WrenModel" parent="VisualRoot" unique_id=995673214 instance=ExtResource("2_si4vs")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+
+[node name="Rogue_Dagger" parent="VisualRoot/WrenModel/CharacterArmature/Skeleton3D/Weapon_R" parent_id_path=PackedInt32Array(995673214, 126248973) index="0" unique_id=2103974155]
+visible = false
+
+[node name="CapeletMount" type="BoneAttachment3D" parent="VisualRoot" unique_id=716659529]
+bone_name = "Torso"
+use_external_skeleton = true
+external_skeleton = NodePath("../WrenModel/CharacterArmature/Skeleton3D")
+script = ExtResource("3_755b2")
+mount_profile = ExtResource("4_2qpye")
+offset_position = Vector3(0, 0.22, -0.02)
+offset_rotation_degrees = Vector3(0, 180, 0)
+offset_scale = Vector3(0.92, 0.92, 0.92)
+
+[node name="M05Capelet" parent="VisualRoot/CapeletMount" unique_id=296873215 instance=ExtResource("5_eovqd")]
+transform = Transform3D(-1.84, 0, -1.6085791e-07, 0, 1.84, 0, 1.6085791e-07, 0, -1.84, 0, 0.44, -0.04)
+
+[node name="SwordMount" type="BoneAttachment3D" parent="VisualRoot" unique_id=1128202508]
+bone_name = "Weapon.R"
+use_external_skeleton = true
+external_skeleton = NodePath("../WrenModel/CharacterArmature/Skeleton3D")
+script = ExtResource("3_755b2")
+mount_profile = ExtResource("6_qwk4c")
+offset_rotation_degrees = Vector3(85, 0, 0)
+
+[node name="M01Sword" parent="VisualRoot/SwordMount" unique_id=2135430319 instance=ExtResource("7_nnkt7")]
+transform = Transform3D(2, 0, 0, 0, 0.17431161, -1.9923894, 0, 1.9923894, 0.17431161, 0, 0, 0)
+
+[node name="LanternHipMount" type="BoneAttachment3D" parent="VisualRoot" unique_id=1463885549]
+bone_name = "Hips"
+use_external_skeleton = true
+external_skeleton = NodePath("../WrenModel/CharacterArmature/Skeleton3D")
+script = ExtResource("3_755b2")
+mount_profile = ExtResource("8_acpm3")
+offset_position = Vector3(0.24, 0.04, -0.06)
+
+[node name="M02Lantern" parent="VisualRoot/LanternHipMount" unique_id=683341709 instance=ExtResource("9_0cq61")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0.48, 0.08, -0.12)
+
+[node name="LanternRaisedAnchor" type="Marker3D" parent="VisualRoot" unique_id=1672287399]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.38, 1.38, 0.44)
+
+[node name="LanternConeRoot" type="Node3D" parent="VisualRoot" unique_id=1523122361]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.18, 1.08, 0.45)
+
+[node name="ConeMesh" type="MeshInstance3D" parent="VisualRoot/LanternConeRoot" unique_id=765020448]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 3)
+visible = false
+material_override = ExtResource("10_a46qh")
+cast_shadow = 0
+mesh = SubResource("CylinderMesh_4p845")
+
+[node name="LanternConeArea" type="Area3D" parent="VisualRoot/LanternConeRoot" unique_id=356554279]
+collision_layer = 32
+collision_mask = 72
+monitoring = false
+
+[node name="ConeShape" type="CollisionShape3D" parent="VisualRoot/LanternConeRoot/LanternConeArea" unique_id=1165632241]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 3)
+shape = SubResource("CylinderShape3D_0mwch")
+
+[node name="LanternMotes" type="GPUParticles3D" parent="VisualRoot/LanternConeRoot" unique_id=1906317744]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.8)
+emitting = false
+amount = 24
+lifetime = 1.4
+process_material = ExtResource("11_r7lv3")
+draw_pass_1 = ExtResource("12_i4kmo")
+
+[node name="SwordHitbox" type="Area3D" parent="VisualRoot" unique_id=62351204]
+collision_layer = 16
+collision_mask = 8
+monitoring = false
+
+[node name="HitShape" type="CollisionShape3D" parent="VisualRoot/SwordHitbox" unique_id=1599732298]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.85, 1.05)
+shape = SubResource("BoxShape3D_depnx")
+
+[node name="SwordSlashMesh" type="MeshInstance3D" parent="VisualRoot" unique_id=1690612471]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.92, 0.82)
+visible = false
+material_override = ExtResource("13_asqlp")
+cast_shadow = 0
+mesh = SubResource("PlaneMesh_0nftv")
+
+[node name="InteractArea" type="Area3D" parent="VisualRoot" unique_id=488614266]
+collision_layer = 0
+collision_mask = 68
+
+[node name="InteractShape" type="CollisionShape3D" parent="VisualRoot/InteractArea" unique_id=1592477530]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8, 0.4)
+shape = SubResource("SphereShape3D_qndds")
+
+[node name="CameraPivot" type="Node3D" parent="." unique_id=1085484249]
+script = ExtResource("14_8vyhe")
+
+[node name="SpringArm3D" type="SpringArm3D" parent="CameraPivot" unique_id=219473821]
+shape = SubResource("SphereShape3D_d7nor")
+spring_length = 3.5
+margin = 0.28
+
+[node name="ArmEnd" type="Node3D" parent="CameraPivot/SpringArm3D" unique_id=443601477]
+
+[node name="Camera3D" type="Camera3D" parent="CameraPivot/SpringArm3D/ArmEnd" unique_id=2026712026]
+fov = 50.0
+near = 0.08
+far = 320.0
+
+[editable path="VisualRoot/WrenModel"]
