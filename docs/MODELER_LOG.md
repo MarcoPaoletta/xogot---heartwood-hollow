@@ -55,6 +55,14 @@ One row per round (GDD Section 1.4): asset, round, review sheet path, what chang
 | M02 Brass Lantern | 3 | `docs/evidence/modeler/m02_brass_lantern-r03.png` | Rebuilt 6 vertical corner bars with middle-ring radial sculpting (100% symmetrical bulge), added warm amber glass, bright diamond core flame, horizontal mid-band, seating collars, `OmniLight3D`, and `GlowSprite` (`524 tris`). | Cap dome could curve smoother (1 cut), ring needed physical mount saddle into finial, mid-band slightly thick across diamond. |
 | M02 Brass Lantern | 4 | `docs/evidence/modeler/m02_brass_lantern-r04.png` | Upgraded cap dome to 2-step curve (`heightCuts=2`), added brass ring saddle, slimmed mid-band (`0.0065 m`), enlarged diamond core, per-face bronze paint contrast (`548 tris`). | Cap overhang rim could catch sharper highlight and bars slightly bolder at gameplay distance. |
 | M02 Brass Lantern | 5 | `docs/evidence/modeler/m02_brass_lantern-r05.png` | Beveled overhanging cap rim (`0.003 m`), deepened bronze cap contrast (`#6E3A1C` vs `#A0602A`), thickened 6 bars (`0.0128 m`), refined halo (`640 tris`). | None — all M02 workshop criteria pass (hip/raised pose checks verified in M3). |
+| M05 Wren's Capelet | 1 | `docs/evidence/modeler/m05_capelet-r01.png` | Proportion blockout (`0.620 x 0.350 x 0.400 m`, `288 tris`): tapered pipe mantle + collar. | Stiff cone profile, flat hem, no rolled hood curve, no trim or emblem. |
+| M05 Wren's Capelet | 2 | `docs/evidence/modeler/m05_capelet-r02.png` | Sculpted bell-draped shoulders, higher front chest scoop, longer curved back hem, plush rolled hood collar (`384 tris`). | Slightly wide (`0.648 m`), collar tall, missing trim band and two-leaf emblem. |
+| M05 Wren's Capelet | 3 | `docs/evidence/modeler/m05_capelet-r03.png` | Tightened to `0.623 m` wide, widened low-slung folded hood collar, added 4-piece raised cream two-leaf sprout emblem (`452 tris`). | Emblem inverted and detached slightly in side view; no hem trim paint yet. |
+| M05 Wren's Capelet | 4 | `docs/evidence/modeler/m05_capelet-r04.png` | Flipped emblem right-side-up and painted cream hem trim + dark lining (`452 tris`). | Trim threshold missed back hem ring; emblem vertices rotated around individual pivots. |
+| M05 Wren's Capelet | 5 | `docs/evidence/modeler/m05_capelet-r05.png` | Fixed 5-ring `heightCuts=3` mapping for crisp uniform cream hem trim band around entire cape (`452 tris`). | Emblem leaves buried slightly behind back curve. |
+| M05 Wren's Capelet | 6 | `docs/evidence/modeler/m05_capelet-r06.png` | Snapped emblem toward back face center/normal (`452 tris`). | Back center ridge split emblem pieces under individual-pivot rotation. |
+| M05 Wren's Capelet | 7 | `docs/evidence/modeler/m05_capelet-r07.png` | Tested 15-deg Y-rotated pipe for flat back panel (`452 tris`). | Y-rotation skewed asymmetric oval width (`0.587 m`); emblem still recessed. |
+| M05 Wren's Capelet | 8 | `docs/evidence/modeler/m05_capelet-r08.png` | Restored symmetric `0.623 m` oval and merged all 4 emblem pieces into one rigid unified mesh placed along measured back ridge (`452 tris`). | Finalized as-is per user directive to move directly to M06 Heartwood and playable game. |
 
 ## Criteria check per asset
 
@@ -73,6 +81,12 @@ One row per round (GDD Section 1.4): asset, round, review sheet path, what chang
 - Silhouette (`RevGameplay` & `RevFar`): overhanging cap, bulging cage, flared base, and ring all read clearly; warm gold glow never washes out silhouette.
 - Detail & palette: 6 hexagonal panes and 6 separate curved dark bronze bars (`#8B4102`) countable at `RevGameplay`, domed bronze cap (`#6E3A1C` + `#A0602A` beveled rim), brass ring/finial (`#C98A2E`), warm amber glass (`#FFB828` translucent emissive), glowing diamond flame core (`#FFF6C8`), `OmniLight3D` (`#FFC873`, energy `1.4`, range `5 m`) + radial `GlowSprite`.
 - Hip/raised pose checks: deferred to M3 Wren mount calibration; bridge reuse at scale 1.4 verified in M5.
+
+### M05 Wren's Capelet (Tier A — 8 rounds) — FINALIZED PER USER DIRECTIVE
+- Size: `0.623 x 0.357 x 0.422 m` (target `0.62 m` wide, `0.30 m` collar-to-hem at back, `0.05 m` thick rolled hem).
+- Triangles: `452` (target `300–800`).
+- Palette: `#DE642B` outer orange mantle, `#B4491D` inner lining & underside, `#F4E3C8` crisp uniform cream hem trim band & raised two-leaf emblem.
+- Note: User directed finishing M05 as-is, modeling only M06 next, holding M03/M04/M07–M10, and moving straight to building the playable game.
 
 ## What worked especially well
 

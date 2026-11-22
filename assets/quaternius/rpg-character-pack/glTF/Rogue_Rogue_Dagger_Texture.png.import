@@ -3,9 +3,10 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://xyjl7xamrm4o"
-path="res://.godot/imported/Rogue_Rogue_Dagger_Texture.png-a468a4b5f703389d86766f44ed11fab2.ctex"
+path.s3tc="res://.godot/imported/Rogue_Rogue_Dagger_Texture.png-a468a4b5f703389d86766f44ed11fab2.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 generator_parameters={
 "md5": "035814abc03c2f9e6c30d150b2b5fa60"
@@ -14,11 +15,11 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/quaternius/rpg-character-pack/glTF/Rogue_Rogue_Dagger_Texture.png"
-dest_files=["res://.godot/imported/Rogue_Rogue_Dagger_Texture.png-a468a4b5f703389d86766f44ed11fab2.ctex"]
+dest_files=["res://.godot/imported/Rogue_Rogue_Dagger_Texture.png-a468a4b5f703389d86766f44ed11fab2.s3tc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/high_quality_mode=0
 compress/lossy_quality=0.7
@@ -43,4 +44,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=1
+detect_3d/compress_to=0
