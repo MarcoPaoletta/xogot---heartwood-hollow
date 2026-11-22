@@ -7,6 +7,7 @@ Measured sizes, triangle counts, review rounds, and scene usage for every Modele
 | ID | Asset | Scene Path | Measured Size X x Y x Z (m) | Triangles | Review Rounds | Used In |
 | :-- | :-- | :-- | :-- | --: | --: | :-- |
 | M01 | Wren's wooden sword | `res://assets/modeler/m01_wooden_sword/m01_wooden_sword.tscn` | `0.190 x 0.780 x 0.042` | 396 | 5 | `scenes/actors/wren.tscn`, `tests/model_lab.tscn` |
+| M02 | Wren's brass lantern | `res://assets/modeler/m02_brass_lantern/m02_brass_lantern.tscn` | `0.162 x 0.300 x 0.143` | 640 | 5 | `scenes/actors/wren.tscn`, `assets/modeler/m08_river_bridge/m08_river_bridge.tscn`, `tests/model_lab.tscn` |
 
 ## Xogot Modeler Level Geometry (Section 1.7)
 
