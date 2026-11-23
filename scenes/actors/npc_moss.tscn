@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://b4m020btxrlrg"]
+
+[ext_resource type="Script" uid="uid://btlsdsk0216lp" path="res://scripts/actors/npc.gd" id="1_kwjwm"]
+[ext_resource type="PackedScene" uid="uid://mgy5ra45r21j" path="res://assets/quaternius/cute-animated-monsters/glTF/Demon.gltf" id="2_2a8vh"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_g3feo"]
+radius = 0.42
+height = 1.6
+
+[node name="Moss" type="StaticBody3D" unique_id=1076328251]
+collision_layer = 4
+collision_mask = 0
+script = ExtResource("1_kwjwm")
+npc_id = "moss"
+display_name = "Moss"
+tint_color = Color(0.6039216, 0.32156864, 0.83137256, 1)
+
+[node name="BodyCollider" type="CollisionShape3D" parent="." unique_id=912799002]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8, 0)
+shape = SubResource("CapsuleShape3D_g3feo")
+
+[node name="ModelHolder" type="Node3D" parent="." unique_id=1585141678]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0)
+
+[node name="Model" parent="ModelHolder" unique_id=1578039846 instance=ExtResource("2_2a8vh")]
+
+[node name="NameLabel" type="Label3D" parent="." unique_id=421848916]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.25, 0)
+billboard = 1
+modulate = Color(0.99215686, 0.9254902, 0.8235294, 1)
+outline_modulate = Color(0.3529412, 0.20392157, 0.1254902, 1)
+text = "Moss"
+font_size = 38
+outline_size = 10

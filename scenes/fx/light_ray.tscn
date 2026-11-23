@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://c0y4jmf8iy352"]
+
+[ext_resource type="Material" uid="uid://c3ohaj4rosq5e" path="res://assets/resources/env/light_ray_mat.tres" id="1_eoktm"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_gi31j"]
+size = Vector2(5.5, 22)
+
+[node name="LightRay" type="MeshInstance3D" unique_id=1995370685]
+material_override = ExtResource("1_eoktm")
+cast_shadow = 0
+mesh = SubResource("QuadMesh_gi31j")

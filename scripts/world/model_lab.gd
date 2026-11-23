@@ -52,6 +52,9 @@ func _ready() -> void:
 	_silhouette_mat = load("res://assets/modeler/_materials/silhouette_black.tres")
 	if white_backdrop != null:
 		white_backdrop.visible = false
+	if Story != null and Story.open_gallery_on_lab_load:
+		Story.open_gallery_on_lab_load = false
+		gallery_mode = true
 	if gallery_ui != null:
 		gallery_ui.visible = gallery_mode
 	if gallery_mode:
@@ -141,6 +144,8 @@ func _show_gallery_item(item: Dictionary, idx: int, total: int) -> void:
 		height_ruler.visible = show_refs
 	if wren_silhouette != null:
 		wren_silhouette.visible = show_refs
+	if backdrop != null:
+		backdrop.visible = dist <= 12.0
 
 
 func clear_specimen() -> void:

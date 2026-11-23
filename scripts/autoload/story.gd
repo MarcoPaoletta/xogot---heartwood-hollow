@@ -36,6 +36,7 @@ var run_time_sec: float = 0.0
 var run_active: bool = false
 var god_mode: bool = false
 var dialogue_open: bool = false
+var open_gallery_on_lab_load: bool = false
 
 
 func _process(delta: float) -> void:

@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://cvummw02v6nb8"]
+
+[ext_resource type="Script" uid="uid://btlsdsk0216lp" path="res://scripts/actors/npc.gd" id="1_2ulqm"]
+[ext_resource type="PackedScene" uid="uid://ow3kr6rvye0x" path="res://assets/quaternius/rpg-character-pack/glTF/Monk.gltf" id="2_7qsqv"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_d72ge"]
+radius = 0.42
+height = 1.6
+
+[node name="MotherClove" type="StaticBody3D" unique_id=904676360]
+collision_layer = 4
+collision_mask = 0
+script = ExtResource("1_2ulqm")
+npc_id = "mother_clove"
+display_name = "Mother Clove"
+tint_color = Color(0.9098039, 0.7254902, 0.47058824, 1)
+
+[node name="BodyCollider" type="CollisionShape3D" parent="." unique_id=1004885220]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8, 0)
+shape = SubResource("CapsuleShape3D_d72ge")
+
+[node name="ModelHolder" type="Node3D" parent="." unique_id=561163957]
+transform = Transform3D(0.52, 0, 0, 0, 0.52, 0, 0, 0, 0.52, 0, 0, 0)
+
+[node name="Model" parent="ModelHolder" unique_id=1969330143 instance=ExtResource("2_7qsqv")]
+
+[node name="NameLabel" type="Label3D" parent="." unique_id=1850729708]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.85, 0)
+billboard = 1
+modulate = Color(0.99215686, 0.9254902, 0.8235294, 1)
+outline_modulate = Color(0.3529412, 0.20392157, 0.1254902, 1)
+text = "Mother Clove"
+font_size = 38
+outline_size = 10

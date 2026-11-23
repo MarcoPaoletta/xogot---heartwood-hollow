@@ -1,0 +1,12 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://di7560qc3mhon"]
+
+[ext_resource type="Shader" uid="uid://ic3t52stkm13" path="res://assets/shaders/river_water.gdshader" id="1_82hjg"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_82hjg")
+shader_parameter/deep_color = Color(0.14, 0.52, 0.58, 1)
+shader_parameter/shallow_color = Color(0.28, 0.74, 0.72, 1)
+shader_parameter/foam_color = Color(0.92, 0.98, 0.96, 1)
+shader_parameter/sparkle_color = Color(1, 0.94, 0.65, 1)
+shader_parameter/speed = 0.75

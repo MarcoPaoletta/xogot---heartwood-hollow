@@ -1,0 +1,69 @@
+[gd_scene format=3 uid="uid://brmragocbgwwu"]
+
+[ext_resource type="Script" uid="uid://chgeudiysn4ti" path="res://scripts/monsters/forest_monster.gd" id="1_i3vps"]
+[ext_resource type="PackedScene" uid="uid://hj1756sgy82n" path="res://assets/quaternius/cute-animated-monsters/glTF/Pig.gltf" id="2_ghfva"]
+[ext_resource type="Material" uid="uid://clj5xw40ri0fk" path="res://assets/resources/env/calm_ring_mat.tres" id="3_s2mtf"]
+[ext_resource type="Material" uid="uid://dhguvqswisbdd" path="res://assets/resources/env/heart_particles_proc.tres" id="4_v1hdl"]
+[ext_resource type="SphereMesh" uid="uid://be4us78yekork" path="res://assets/resources/env/heart_pop_mesh.tres" id="5_5fld5"]
+[ext_resource type="Material" uid="uid://c7264q0e5vhrp" path="res://assets/resources/env/sparkle_poof_proc.tres" id="6_iuvqn"]
+[ext_resource type="SphereMesh" uid="uid://sfwf1adpumwp" path="res://assets/resources/env/sparkle_dot_mesh.tres" id="7_i1o1s"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_olyeu"]
+radius = 0.475
+height = 0.95
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_3a3h4"]
+size = Vector2(1.65, 1.65)
+
+[node name="MonsterRoller" type="CharacterBody3D" unique_id=2090775855]
+collision_layer = 8
+collision_mask = 11
+script = ExtResource("1_i3vps")
+archetype = 4
+move_speed = 3.2
+body_tint = Color(0.9607843, 0.5411765, 0.11764706, 1)
+
+[node name="BodyCollider" type="CollisionShape3D" parent="." unique_id=1430790401]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.475, 0)
+shape = SubResource("CapsuleShape3D_olyeu")
+
+[node name="ModelHolder" type="Node3D" parent="." unique_id=561591947]
+transform = Transform3D(0.48, 0, 0, 0, 0.48, 0, 0, 0, 0.48, 0, 0, 0)
+
+[node name="Model" parent="ModelHolder" unique_id=878796113 instance=ExtResource("2_ghfva")]
+
+[node name="CalmRing" type="MeshInstance3D" parent="." unique_id=503464644]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.08, 0)
+visible = false
+material_override = ExtResource("3_s2mtf")
+cast_shadow = 0
+mesh = SubResource("PlaneMesh_3a3h4")
+
+[node name="AngerMark" type="Node3D" parent="." unique_id=2122512902]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.35, 0)
+
+[node name="Exclaim" type="Label3D" parent="AngerMark" unique_id=1657548108]
+billboard = 1
+modulate = Color(0.93333334, 0.23137255, 0.23137255, 1)
+text = "!"
+font_size = 72
+
+[node name="HeartParticles" type="GPUParticles3D" parent="." unique_id=981758159]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.66, 0)
+emitting = false
+amount = 14
+lifetime = 1.1
+one_shot = true
+explosiveness = 0.9
+process_material = ExtResource("4_v1hdl")
+draw_pass_1 = ExtResource("5_5fld5")
+
+[node name="SparkleParticles" type="GPUParticles3D" parent="." unique_id=506332163]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.52, 0)
+emitting = false
+amount = 22
+lifetime = 0.85
+one_shot = true
+explosiveness = 0.95
+process_material = ExtResource("6_iuvqn")
+draw_pass_1 = ExtResource("7_i1o1s")

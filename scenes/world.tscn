@@ -1,0 +1,116 @@
+[gd_scene format=3 uid="uid://txevw483qmgy"]
+
+[ext_resource type="Script" uid="uid://cb3h2mlawngc8" path="res://scripts/world/world_director.gd" id="1_e3hyu"]
+[ext_resource type="Environment" uid="uid://uv3s3tgq4cpp" path="res://assets/resources/env/heartwood_env.tres" id="2_q5onr"]
+[ext_resource type="Material" uid="uid://dau8tbroy3qdl" path="res://assets/modeler/_materials/grass_light.tres" id="3_jhx03"]
+[ext_resource type="PackedScene" uid="uid://b5v87ahk5mqsc" path="res://assets/modeler/level/forest_path.tscn" id="4_o8fc1"]
+[ext_resource type="PackedScene" uid="uid://bky5puq0fnl4t" path="res://scenes/actors/wren.tscn" id="5_xo05s"]
+[ext_resource type="PackedScene" uid="uid://c10xjlkxpccl0" path="res://scenes/zones/zone1_path.tscn" id="6_dss4m"]
+[ext_resource type="PackedScene" uid="uid://bfb6mtsj5eb7r" path="res://scenes/zones/zone2_bridge.tscn" id="7_7t5mc"]
+[ext_resource type="PackedScene" uid="uid://5xyixvjlw0sk" path="res://scenes/zones/zone3_ruins.tscn" id="8_lakw3"]
+[ext_resource type="PackedScene" uid="uid://vgr7nn45fn8i" path="res://scenes/zones/zone4_chamber.tscn" id="9_pm21f"]
+[ext_resource type="Script" uid="uid://dt78iy820unkr" path="res://scripts/camera/menu_camera_director.gd" id="10_2lf6f"]
+[ext_resource type="Script" uid="uid://dwrd7g8gh0adr" path="res://scripts/camera/menu_camera_shot.gd" id="11_7iits"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_oo54l"]
+size = Vector3(160, 1, 137.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kpybi"]
+size = Vector3(160, 1, 137.5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ctatt"]
+size = Vector3(160, 1, 192.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xgqkh"]
+size = Vector3(160, 1, 192.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_munwf"]
+size = Vector3(2, 12, 310)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ts3gi"]
+size = Vector3(60, 12, 2)
+
+[node name="World" type="Node3D" unique_id=1117499118]
+script = ExtResource("1_e3hyu")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=2032218585]
+environment = ExtResource("2_q5onr")
+
+[node name="Sun" type="DirectionalLight3D" parent="." unique_id=2075026111]
+transform = Transform3D(0.8480481, -0.3938068, 0.35458517, 0, 0.66913056, 0.74314487, -0.52991927, -0.63022256, 0.5674549, 20, 38, 15)
+light_color = Color(1, 0.8901961, 0.6901961, 1)
+light_energy = 1.45
+shadow_enabled = true
+shadow_bias = 0.06
+directional_shadow_max_distance = 95.0
+
+[node name="ForestFloor" type="StaticBody3D" parent="." unique_id=1663017785]
+collision_mask = 0
+
+[node name="SouthMesh" type="MeshInstance3D" parent="ForestFloor" unique_id=919505336]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, -3.75)
+material_override = ExtResource("3_jhx03")
+mesh = SubResource("BoxMesh_oo54l")
+
+[node name="SouthCol" type="CollisionShape3D" parent="ForestFloor" unique_id=29601765]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, -3.75)
+shape = SubResource("BoxShape3D_kpybi")
+
+[node name="NorthMesh" type="MeshInstance3D" parent="ForestFloor" unique_id=145000259]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, -183.75)
+material_override = ExtResource("3_jhx03")
+mesh = SubResource("BoxMesh_ctatt")
+
+[node name="NorthCol" type="CollisionShape3D" parent="ForestFloor" unique_id=1641014171]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, -183.75)
+shape = SubResource("BoxShape3D_xgqkh")
+
+[node name="BoundWest" type="CollisionShape3D" parent="ForestFloor" unique_id=156016057]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, 4, -105)
+shape = SubResource("BoxShape3D_munwf")
+
+[node name="BoundEast" type="CollisionShape3D" parent="ForestFloor" unique_id=829694571]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 4, -105)
+shape = SubResource("BoxShape3D_munwf")
+
+[node name="BoundSouth" type="CollisionShape3D" parent="ForestFloor" unique_id=1512018702]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 48)
+shape = SubResource("BoxShape3D_ts3gi")
+
+[node name="BoundNorth" type="CollisionShape3D" parent="ForestFloor" unique_id=2144997894]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, -242)
+shape = SubResource("BoxShape3D_ts3gi")
+
+[node name="ForestPath" parent="." unique_id=1280713100 instance=ExtResource("4_o8fc1")]
+
+[node name="Wren" parent="." unique_id=38665821 instance=ExtResource("5_xo05s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 41)
+
+[node name="Zone1_ThistlePath" parent="." unique_id=1888016173 instance=ExtResource("6_dss4m")]
+
+[node name="Zone2_BridgeCamp" parent="." unique_id=1746539365 instance=ExtResource("7_7t5mc")]
+
+[node name="Zone3_FoggyRuins" parent="." unique_id=390546324 instance=ExtResource("8_lakw3")]
+
+[node name="Zone4_HeartChamber" parent="." unique_id=985802366 instance=ExtResource("9_pm21f")]
+
+[node name="MenuCameraDirector" type="Node3D" parent="." unique_id=23057040]
+script = ExtResource("10_2lf6f")
+
+[node name="Shot1_WrenGear" type="Node3D" parent="MenuCameraDirector" unique_id=1639012734]
+script = ExtResource("11_7iits")
+duration = 7.5
+fov = 42.0
+
+[node name="Shot2_PathHeartwood" type="Node3D" parent="MenuCameraDirector" unique_id=1394401435]
+script = ExtResource("11_7iits")
+duration = 8.0
+
+[node name="Shot3_RiverBridge" type="Node3D" parent="MenuCameraDirector" unique_id=1169959153]
+script = ExtResource("11_7iits")
+duration = 8.0
+
+[node name="Shot4_HeartChamber" type="Node3D" parent="MenuCameraDirector" unique_id=616348923]
+script = ExtResource("11_7iits")
+duration = 8.5
+fov = 50.0

@@ -1,0 +1,9 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://clj5xw40ri0fk"]
+
+[ext_resource type="Shader" uid="uid://e6wdp1aajg12" path="res://assets/shaders/calm_ring.gdshader" id="1_j7uoi"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_j7uoi")
+shader_parameter/ring_color = Color(1, 0.84705883, 0.3019608, 1)
+shader_parameter/progress = 0.0

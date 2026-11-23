@@ -1,0 +1,9 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://c3ohaj4rosq5e"]
+
+[ext_resource type="Shader" uid="uid://blrlkpsrpoqdb" path="res://assets/shaders/light_ray.gdshader" id="1_nyr6t"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_nyr6t")
+shader_parameter/ray_color = Color(1, 0.91, 0.56, 1)
+shader_parameter/opacity = 0.2
