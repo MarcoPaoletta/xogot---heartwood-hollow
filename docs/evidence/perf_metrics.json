@@ -1,0 +1,9 @@
+{
+  "avg_fps": 59.9,
+  "avg_ms": 16.68,
+  "low1_fps": 52.9,
+  "max_draw_calls": 444,
+  "max_primitives": 645119,
+  "p99_ms": 18.91,
+  "samples": 2338
+}

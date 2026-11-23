@@ -1,0 +1,10 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://1ll3htmyspc6"]
+
+[ext_resource type="Shader" uid="uid://bbwmtnr758n55" path="res://assets/shaders/forest_ground.gdshader" id="1_0h50q"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_0h50q")
+shader_parameter/moss_dark = Color(0.24, 0.4, 0.14, 1)
+shader_parameter/meadow_mid = Color(0.37, 0.56, 0.2, 1)
+shader_parameter/sunlit_fleck = Color(0.56, 0.69, 0.26, 1)

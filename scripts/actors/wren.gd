@@ -45,6 +45,7 @@ var hearts: float = 5.0
 var controls_enabled: bool = true
 var walk_toggled: bool = false
 var is_lantern_raised: bool = false
+var _forced_lantern: bool = false
 var is_fainting: bool = false
 
 var _model_yaw: float = PI # Facing -Z (north along forest path)
@@ -89,6 +90,16 @@ func _ready() -> void:
 		lantern_motes.emitting = false
 	if shield_back_indicator != null:
 		shield_back_indicator.visible = Story.has_shield
+	# Defensive guard: disable any StaticBody3D colliders on mounted gear under VisualRoot
+	if visual_root != null:
+		var q: Array[Node] = [visual_root]
+		while not q.is_empty():
+			var node: Node = q.pop_back()
+			if node is StaticBody3D:
+				(node as StaticBody3D).collision_layer = 0
+				(node as StaticBody3D).collision_mask = 0
+			for ch: Node in node.get_children():
+				q.append(ch)
 	if Story != null:
 		Story.flags_changed.connect(_on_story_flags_changed)
 	hearts_changed.emit(hearts, max_hearts)
@@ -202,6 +213,16 @@ func _unhandled_input(event: InputEvent) -> void:
 		_try_interact()
 
 
+func set_lantern_forced(raised: bool) -> void:
+	_forced_lantern = raised
+	is_lantern_raised = raised
+	if raised:
+		_lantern_blend = 1.0
+	else:
+		_lantern_blend = 0.0
+	lantern_state_changed.emit(raised)
+
+
 func _physics_process(delta: float) -> void:
 	# CharacterBody3D NEVER rotates (player-controller.md Bug C fix)
 	rotation = Vector3.ZERO
@@ -222,8 +243,8 @@ func _physics_process(delta: float) -> void:
 		move_and_slide()
 		return
 
-	# Lantern hold state (Right Mouse Button)
-	var want_lantern: bool = controls_enabled and Input.is_action_pressed(&"lantern") and _swing_timer <= 0.0
+	# Lantern hold state (Right Mouse Button or scripted story pose)
+	var want_lantern: bool = _forced_lantern or (controls_enabled and Input.is_action_pressed(&"lantern") and _swing_timer <= 0.0)
 	if want_lantern != is_lantern_raised:
 		is_lantern_raised = want_lantern
 		lantern_state_changed.emit(is_lantern_raised)

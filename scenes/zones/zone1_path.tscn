@@ -482,27 +482,27 @@ transform = Transform3D(-0.17082053, 0, -0.6375111, 0, 0.66, 0, 0.6375111, 0, -0
 [node name="GroveBorders" type="Node3D" parent="." unique_id=1754021138]
 
 [node name="Canopy_0" parent="GroveBorders" unique_id=1475121356 instance=ExtResource("35_gw05q")]
-transform = Transform3D(0.3987754, 0, 0.18595204, 0, 0.44, 0, -0.18595204, 0, 0.3987754, -22, -1.2, 24)
+transform = Transform3D(-0.2523736, 0, -0.36042684, 0, 0.44, 0, 0.36042684, 0, -0.2523736, -22, -1.2, 24)
 metadata/is_border_tree = true
 
 [node name="Canopy_1" parent="GroveBorders" unique_id=1585200471 instance=ExtResource("35_gw05q")]
-transform = Transform3D(0.25237364, 0, -0.3604269, 0, 0.44, 0, 0.3604269, 0, 0.25237364, 22, -1.2, 20)
+transform = Transform3D(-0.33207226, 0, 0.28866595, 0, 0.44, 0, -0.28866595, 0, -0.33207226, 22, -1.2, 20)
 metadata/is_border_tree = true
 
 [node name="Canopy_2" parent="GroveBorders" unique_id=1706588717 instance=ExtResource("35_gw05q")]
-transform = Transform3D(-0.15732926, 0, 0.4322586, 0, 0.46, 0, -0.4322586, 0, -0.15732926, -21, -1.2, -8)
+transform = Transform3D(-0.409863, 0, -0.20883568, 0, 0.46, 0, 0.20883568, 0, -0.409863, -21, -1.2, -8)
 metadata/is_border_tree = true
 
 [node name="Canopy_3" parent="GroveBorders" unique_id=1726696564 instance=ExtResource("35_gw05q")]
-transform = Transform3D(-0.28925443, 0, -0.34471998, 0, 0.45, 0, 0.34471998, 0, -0.28925443, 21, -1.2, -16)
+transform = Transform3D(-0.2581094, 0, 0.3686184, 0, 0.45, 0, -0.3686184, 0, -0.2581094, 21, -1.2, -16)
 metadata/is_border_tree = true
 
 [node name="Canopy_4" parent="GroveBorders" unique_id=1240525819 instance=ExtResource("35_gw05q")]
-transform = Transform3D(0.30780005, 0, 0.34184664, 0, 0.46, 0, -0.34184664, 0, 0.30780005, -19.5, -1.2, -42)
+transform = Transform3D(-0.34716645, 0, -0.30178714, 0, 0.46, 0, 0.30178714, 0, -0.34716645, -19.5, -1.2, -42)
 metadata/is_border_tree = true
 
 [node name="Canopy_5" parent="GroveBorders" unique_id=207762571 instance=ExtResource("35_gw05q")]
-transform = Transform3D(0.14214781, 0, -0.43748602, 0, 0.46, 0, 0.43748602, 0, 0.14214781, 22, -1.2, -46)
+transform = Transform3D(-0.409863, 0, 0.20883568, 0, 0.46, 0, -0.20883568, 0, -0.409863, 22, -1.2, -46)
 metadata/is_border_tree = true
 
 [node name="Atmosphere" type="Node3D" parent="." unique_id=1417500477]
@@ -575,5 +575,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.6, 0.08, -39)
 start_grumpy = false
 
 [node name="ConceptCam_Path" type="Camera3D" parent="." unique_id=2021013944]
-transform = Transform3D(0.99996084, -0.00028958643, -0.008844472, 0, 0.9994644, -0.032724548, 0.008849211, 0.032723267, 0.99942523, -0.2, 2.35, -33.5)
-fov = 48.0
+transform = Transform3D(0.9999745, 6.377217e-06, -0.007142672, 0, 0.9999996, 0.00089283317, 0.0071426746, -0.0008928104, 0.9999741, -0.2, 2.25, -34)
+fov = 50.0

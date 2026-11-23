@@ -115,4 +115,7 @@ One row per round (GDD Section 1.4): asset, round, review sheet path, what chang
 
 ## What worked especially well
 
-_No entries yet._
+- **`xo modeler` scriptable pipeline (`modeler_lib.py`):** Driving `xo modeler create`, `poly create`, `bezier create`, `transform`, `paint material`, `paint smoothing --faceted`, and `action mergeObjects` via `xo batch` enabled fast, repeatable multi-round sculpting with exact vertex coordinates, crisp per-face low-poly color blocking, and full Xogot undo/editability preserved inside every saved `.tscn`.
+- **Bezier Plane & Bezier Block shapes (`M06` root arches, `forest_path.tscn`, `river_crossing.tscn` sagging rope rails):** Catmull-Rom Bezier tangents produced organic soaring mossy root arches over the 45 m Heartwood and natural curving dirt paths/ropes cleanly inside Xogot Modeler.
+- **`--collision trimesh` / `--collision box` on `xo modeler create`:** Generated clean walkable `ModelerCollision` colliders directly on visible meshes (`M06` trunk/roots and `river_crossing` plank deck + approach ramps) while keeping non-colliding meshes (`M01`, `M02`, `M05`, `M06 /Canopy`) lightweight with `--no-collision`.
+- **Automated 6-camera + silhouette review sheets (`tests/model_lab.tscn`):** Catching silhouette, pivot, symmetry, and surface-shading defects at exact gameplay FOV (`50°`) before placing assets in the world saved huge iteration time across 22 total review rounds.

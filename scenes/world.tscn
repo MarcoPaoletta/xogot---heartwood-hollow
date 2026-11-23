@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cb3h2mlawngc8" path="res://scripts/world/world_director.gd" id="1_e3hyu"]
 [ext_resource type="Environment" uid="uid://uv3s3tgq4cpp" path="res://assets/resources/env/heartwood_env.tres" id="2_q5onr"]
-[ext_resource type="Material" uid="uid://dau8tbroy3qdl" path="res://assets/modeler/_materials/grass_light.tres" id="3_jhx03"]
+[ext_resource type="Material" uid="uid://1ll3htmyspc6" path="res://assets/resources/env/forest_ground_mat.tres" id="3_e3hyu"]
 [ext_resource type="PackedScene" uid="uid://b5v87ahk5mqsc" path="res://assets/modeler/level/forest_path.tscn" id="4_o8fc1"]
 [ext_resource type="PackedScene" uid="uid://bky5puq0fnl4t" path="res://scenes/actors/wren.tscn" id="5_xo05s"]
 [ext_resource type="PackedScene" uid="uid://c10xjlkxpccl0" path="res://scenes/zones/zone1_path.tscn" id="6_dss4m"]
@@ -38,8 +38,8 @@ environment = ExtResource("2_q5onr")
 
 [node name="Sun" type="DirectionalLight3D" parent="." unique_id=2075026111]
 transform = Transform3D(0.8480481, -0.3938068, 0.35458517, 0, 0.66913056, 0.74314487, -0.52991927, -0.63022256, 0.5674549, 20, 38, 15)
-light_color = Color(1, 0.8901961, 0.6901961, 1)
-light_energy = 1.45
+light_color = Color(1, 0.8862745, 0.65882355, 1)
+light_energy = 1.28
 shadow_enabled = true
 shadow_bias = 0.06
 directional_shadow_max_distance = 95.0
@@ -49,7 +49,7 @@ collision_mask = 0
 
 [node name="SouthMesh" type="MeshInstance3D" parent="ForestFloor" unique_id=919505336]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, -3.75)
-material_override = ExtResource("3_jhx03")
+material_override = ExtResource("3_e3hyu")
 mesh = SubResource("BoxMesh_oo54l")
 
 [node name="SouthCol" type="CollisionShape3D" parent="ForestFloor" unique_id=29601765]
@@ -58,7 +58,7 @@ shape = SubResource("BoxShape3D_kpybi")
 
 [node name="NorthMesh" type="MeshInstance3D" parent="ForestFloor" unique_id=145000259]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, -183.75)
-material_override = ExtResource("3_jhx03")
+material_override = ExtResource("3_e3hyu")
 mesh = SubResource("BoxMesh_ctatt")
 
 [node name="NorthCol" type="CollisionShape3D" parent="ForestFloor" unique_id=1641014171]
@@ -98,19 +98,35 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 41)
 script = ExtResource("10_2lf6f")
 
 [node name="Shot1_WrenGear" type="Node3D" parent="MenuCameraDirector" unique_id=1639012734]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 2.5, -32.2)
 script = ExtResource("11_7iits")
 duration = 7.5
-fov = 42.0
+end_offset = Vector3(1.1, 0.25, -4.5)
+look_target = Vector3(0.3, 4.4, -92)
 
 [node name="Shot2_PathHeartwood" type="Node3D" parent="MenuCameraDirector" unique_id=1394401435]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3, 2.4, -68)
 script = ExtResource("11_7iits")
-duration = 8.0
+duration = 7.5
+end_offset = Vector3(2.3, 0.15, -1.2)
+look_target = Vector3(0.3, 1.55, -92.5)
 
 [node name="Shot3_RiverBridge" type="Node3D" parent="MenuCameraDirector" unique_id=1169959153]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4, 2.6, -196.2)
 script = ExtResource("11_7iits")
 duration = 8.0
+fov = 50.0
+end_offset = Vector3(4.8, 0.4, -1.2)
+look_target = Vector3(0, 4.8, -214)
 
 [node name="Shot4_HeartChamber" type="Node3D" parent="MenuCameraDirector" unique_id=616348923]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.75, 1.45, 43.3)
 script = ExtResource("11_7iits")
-duration = 8.5
-fov = 50.0
+duration = 7.0
+fov = 42.0
+end_offset = Vector3(-3.2, 0.05, -0.2)
+look_target = Vector3(0, 0.95, 40.9)
+
+[node name="Camera3D" type="Camera3D" parent="MenuCameraDirector" unique_id=1640782553]
+fov = 48.0
+far = 320.0

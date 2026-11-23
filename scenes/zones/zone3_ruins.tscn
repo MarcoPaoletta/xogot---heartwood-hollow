@@ -363,16 +363,16 @@ transform = Transform3D(-0.6982948, 0, -0.04882948, 0, 0.7, 0, 0.04882948, 0, -0
 [node name="GroveBorders" type="Node3D" parent="." unique_id=1486466115]
 
 [node name="Canopy_0" parent="GroveBorders" unique_id=1475121356 instance=ExtResource("20_42m6d")]
-transform = Transform3D(0.3897114, 0, 0.225, 0, 0.45, 0, -0.225, 0, 0.3897114, -21, -1.2, -125)
+transform = Transform3D(-0.2581094, 0, -0.3686184, 0, 0.45, 0, 0.3686184, 0, -0.2581094, -21, -1.2, -125)
 
 [node name="Canopy_1" parent="GroveBorders" unique_id=1831385938 instance=ExtResource("20_42m6d")]
-transform = Transform3D(0.22499998, 0, -0.38971144, 0, 0.45, 0, 0.38971144, 0, 0.22499998, 21, -1.2, -128)
+transform = Transform3D(-0.33961934, 0, 0.2952265, 0, 0.45, 0, -0.2952265, 0, -0.33961934, 21, -1.2, -128)
 
 [node name="Canopy_2" parent="GroveBorders" unique_id=1976734003 instance=ExtResource("20_42m6d")]
-transform = Transform3D(-0.2753167, 0, 0.39319295, 0, 0.48, 0, -0.39319295, 0, -0.2753167, -22, -1.2, -158)
+transform = Transform3D(-0.42768306, 0, -0.21791546, 0, 0.48, 0, 0.21791546, 0, -0.42768306, -22, -1.2, -158)
 
 [node name="Canopy_3" parent="GroveBorders" unique_id=308653484 instance=ExtResource("20_42m6d")]
-transform = Transform3D(-0.16416965, 0, -0.45105246, 0, 0.48, 0, 0.45105246, 0, -0.16416965, 22, -1.2, -160)
+transform = Transform3D(-0.2753167, 0, 0.39319295, 0, 0.48, 0, -0.39319295, 0, -0.2753167, 22, -1.2, -160)
 
 [node name="RuinsPlaza" parent="." unique_id=1012958091 instance=ExtResource("21_wjm0h")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -142)

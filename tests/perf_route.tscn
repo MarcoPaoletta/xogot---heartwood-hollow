@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://b028gsk6nodu1"]
+
+[ext_resource type="Script" uid="uid://dlev5h4usbmb4" path="res://scripts/world/perf_route.gd" id="1_iw2ad"]
+[ext_resource type="PackedScene" uid="uid://txevw483qmgy" path="res://scenes/world.tscn" id="2_ypqi1"]
+
+[node name="PerfRoute" type="Node" unique_id=1610353037]
+script = ExtResource("1_iw2ad")
+
+[node name="World" parent="." unique_id=1117499118 instance=ExtResource("2_ypqi1")]
+
+[node name="FlyCam" type="Camera3D" parent="." unique_id=1644148336]
+fov = 50.0

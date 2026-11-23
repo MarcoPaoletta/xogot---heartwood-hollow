@@ -394,11 +394,11 @@ func _execute_bridge_fight() -> void:
 	# Activate Bumble (6 hits) + 3 camp monsters to hostile!
 	var bumble: ForestMonster = zone2.get_node_or_null("ChiefBumble") as ForestMonster
 	if bumble != null:
-		bumble.set_hostile_mode(true)
+		bumble.set_hostile_mode(true, true)
 	for nm: String in ["CampBlob", "CampWinged", "CampFurball"]:
 		var cm: ForestMonster = zone2.get_node_or_null(nm) as ForestMonster
 		if cm != null:
-			cm.set_hostile_mode(true)
+			cm.set_hostile_mode(true, true)
 	hint_changed.emit("Left Mouse: Bonk Chief Bumble (6 hits) — Lantern stuns him!")
 
 

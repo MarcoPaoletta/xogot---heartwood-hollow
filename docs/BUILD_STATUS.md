@@ -1,0 +1,23 @@
+# Build Status: Heartwood Hollow (v1)
+
+- **Status:** Complete playable v1 build verified live in Xogot 4.8 (Mobile renderer, macOS).
+- **Main scene:** `res://scenes/main.tscn` (opens the full continuous 4-zone live 3D forest world directly in Xogot before pressing Play).
+- **Xogot Modeler Hero Assets Completed:**
+  - M01 Wren's Wooden Sword (`396 tris`, 5 rounds)
+  - M02 Wren's Brass Lantern (`640 tris`, 5 rounds — mounted on Wren and placed on Thistle Gate, Bramble's Stall, River Bridge, Camp Tents, and Heart Chamber ruins)
+  - M05 Wren's Capelet (`452 tris`, 8 rounds, finalized per user directive)
+  - M06 The Heartwood (`12,532 tris`, `45.0 m` tall, 4 rounds, walkable root arches)
+- **Xogot Modeler Level Geometry Completed:** `forest_path.tscn`, `river_crossing.tscn`, `ruins_plaza.tscn`, plus Modeler-sculpted `heartseed_node.tscn`.
+- **On Hold (per user directive 2026-11-22 20:07):** M03 (rocks), M04 (forest trees), M07–M10 (hero Heartseed/shard polish, hero bridge polish, honey pot, guard's shield). Zero pack models of Modeler categories are substituted.
+- **Gameplay & Narrative Verified Live:**
+  - Title screen over live 4-shot hard-cut forest camera loop + boot mute verified (`M` toggles audio on all screens including Pause).
+  - Signature mechanic on screen `<10 s` after Start: M02 Brass Lantern volumetric calm cone calms grumpy monsters (`FirstBlob`) with filling ring & heart burst; M01 Wooden Sword 3-hit combo bonks grumpy monsters into sparkle poofs.
+  - Decision 1 (Zone 2 Bridge): **Offer the honey** (camp dances, east shortcut opens, bakery message card) and **Fight for the bridge** (6-hit Chief Bumble fight, tents collapse, east woods turn hostile).
+  - Decision 2 (Zone 3 Foggy Ruins): **Turn Pip in** (Captain Rook's braziers ignite and clear fog, shield granted) and **Keep the secret** (Moss's golden sparkle trail lights the misty path north).
+  - Decision 3 & 3 Endings (Zone 4 Heart Chamber): **Return it to the forest**, **Carry it home to Thistle**, and **Share the light** (unlocked by Honey + Keep Secret), each with custom color grade, 3-shot epilogue, and run summary End Card.
+  - Presenter tools: `F1` Presenter Panel, `F2` Showcase Cameras + M06 Heartwood Orbit, `F3` Toggle HUD, `F4` Modeler Gallery (`tests/model_lab.tscn`).
+- **Performance (`tests/perf_route.tscn`, 40 s across all 4 zones):** `59.9 Avg FPS`, `52.9 FPS 1% low`, `444` max draw calls, `645,119` max triangles.
+- **Evidence:**
+  - Concept Match Final: `docs/evidence/comparison-final.png`
+  - Modeler Showcase Final: `docs/evidence/modeler/modeler-final.png`
+  - Title / Gameplay / Branches / Endings / F1–F4: `docs/evidence/play_*.png`, `docs/evidence/branch_*.png`, `docs/evidence/ending_*.png`, `docs/evidence/end_card.png`, `docs/evidence/presenter_f1_and_orbit.png`, `docs/evidence/modeler_gallery_f4.png`

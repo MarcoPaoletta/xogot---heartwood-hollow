@@ -232,10 +232,10 @@ shadow_size = 8
 shadow_offset = Vector2(0, 4)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oqj4c"]
-content_margin_left = 36.0
-content_margin_top = 26.0
-content_margin_right = 36.0
-content_margin_bottom = 26.0
+content_margin_left = 30.0
+content_margin_top = 18.0
+content_margin_right = 30.0
+content_margin_bottom = 14.0
 bg_color = Color(0.99215686, 0.9254902, 0.8235294, 1)
 border_width_left = 4
 border_width_top = 4
@@ -1413,6 +1413,8 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 mouse_filter = 2
 theme = ExtResource("2_bma8u")
 
@@ -1501,13 +1503,12 @@ text = "Find the ancient Heartwood"
 
 [node name="HintPill" type="PanelContainer" parent="HUD" unique_id=2109558919]
 layout_mode = 0
-anchor_left = 0.25
+anchor_left = 0.24
 anchor_top = 1.0
-anchor_right = 0.75
+anchor_right = 0.76
 anchor_bottom = 1.0
-offset_top = -84.0
-offset_right = -1880.0
-offset_bottom = -28.0
+offset_top = -82.0
+offset_bottom = -24.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_v1bdg")
 
 [node name="HintLabel" type="Label" parent="HUD/HintPill" unique_id=679801769]
@@ -1522,9 +1523,8 @@ anchor_left = 0.36
 anchor_top = 1.0
 anchor_right = 0.64
 anchor_bottom = 1.0
-offset_top = -146.0
-offset_right = 40.0
-offset_bottom = -96.0
+offset_top = -142.0
+offset_bottom = -92.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_qrkc0")
 
 [node name="InteractLabel" type="Label" parent="HUD/InteractPill" unique_id=2105617698]
@@ -1535,10 +1535,9 @@ horizontal_alignment = 1
 
 [node name="ShowcasePill" type="PanelContainer" parent="HUD" unique_id=203728501]
 layout_mode = 0
-anchor_left = 0.35
-anchor_right = 0.65
+anchor_left = 0.34
+anchor_right = 0.66
 offset_top = 22.0
-offset_right = 40.0
 offset_bottom = 68.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_yvtb5")
 
@@ -1555,10 +1554,12 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -195.0
-offset_top = -66.0
-offset_right = -20.0
-offset_bottom = -18.0
+offset_left = -152.0
+offset_top = -42.0
+offset_right = -12.0
+offset_bottom = -8.0
+grow_horizontal = 0
+grow_vertical = 0
 mouse_filter = 2
 
 [node name="MutePill" type="PanelContainer" parent="MuteCorner" unique_id=1679601520]
@@ -1572,7 +1573,7 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_k7elv")
 [node name="MuteLabel" type="Label" parent="MuteCorner/MutePill" unique_id=388718568]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.99215686, 0.9254902, 0.8235294, 1)
-theme_override_font_sizes/font_size = 17
+theme_override_font_sizes/font_size = 15
 text = "Muted (M)"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -1582,6 +1583,8 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 mouse_filter = 2
 theme = ExtResource("2_bma8u")
 
@@ -1591,8 +1594,6 @@ anchor_left = 0.15
 anchor_top = 0.56
 anchor_right = 0.85
 anchor_bottom = 0.9
-offset_right = 40.0
-offset_bottom = 40.0
 theme_override_constants/separation = 18
 alignment = 1
 
@@ -1672,30 +1673,26 @@ text = "Built with Xogot & Xogot Modeler  |  Press F4 for Modeler Gallery"
 [node name="DialogueBox" type="Control" parent="." unique_id=1944056193]
 layout_mode = 3
 anchor_left = 0.08
-anchor_top = 0.7
+anchor_top = 0.725
 anchor_right = 0.92
-anchor_bottom = 0.96
-offset_right = 40.0
-offset_bottom = 40.0
+anchor_bottom = 0.945
 
 [node name="Panel" type="PanelContainer" parent="DialogueBox" unique_id=1828851847]
 layout_mode = 0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = 28.0
-offset_right = -1612.8
-offset_bottom = -280.79993
+offset_top = 22.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_oqj4c")
 
 [node name="VBox" type="VBoxContainer" parent="DialogueBox/Panel" unique_id=1863118917]
 layout_mode = 2
-theme_override_constants/separation = 18
+theme_override_constants/separation = 12
 alignment = 1
 
 [node name="LineLabel" type="Label" parent="DialogueBox/Panel/VBox" unique_id=455812682]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.2901961, 0.16862746, 0.08627451, 1)
-theme_override_font_sizes/font_size = 30
+theme_override_font_sizes/font_size = 27
 horizontal_alignment = 1
 autowrap_mode = 3
 
@@ -1705,36 +1702,36 @@ theme_override_constants/separation = 22
 alignment = 1
 
 [node name="ChoiceBtn0" type="Button" parent="DialogueBox/Panel/VBox/ChoicesRow" unique_id=1323723327]
-custom_minimum_size = Vector2(310, 68)
+custom_minimum_size = Vector2(280, 56)
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 0.99215686, 0.972549, 1)
 theme_override_colors/font_pressed_color = Color(0.99215686, 0.9254902, 0.8235294, 1)
 theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
-theme_override_font_sizes/font_size = 26
+theme_override_font_sizes/font_size = 23
 theme_override_styles/normal = SubResource("StyleBoxFlat_pbku6")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_pbku6")
 theme_override_styles/hover = SubResource("StyleBoxFlat_i3ans")
 text = "Choice"
 
 [node name="ChoiceBtn1" type="Button" parent="DialogueBox/Panel/VBox/ChoicesRow" unique_id=207336957]
-custom_minimum_size = Vector2(310, 68)
+custom_minimum_size = Vector2(280, 56)
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 0.99215686, 0.972549, 1)
 theme_override_colors/font_pressed_color = Color(0.99215686, 0.9254902, 0.8235294, 1)
 theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
-theme_override_font_sizes/font_size = 26
+theme_override_font_sizes/font_size = 23
 theme_override_styles/normal = SubResource("StyleBoxFlat_5bpyr")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_5bpyr")
 theme_override_styles/hover = SubResource("StyleBoxFlat_84uof")
 text = "Choice"
 
 [node name="ChoiceBtn2" type="Button" parent="DialogueBox/Panel/VBox/ChoicesRow" unique_id=959293912]
-custom_minimum_size = Vector2(310, 68)
+custom_minimum_size = Vector2(280, 56)
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 0.99215686, 0.972549, 1)
 theme_override_colors/font_pressed_color = Color(0.99215686, 0.9254902, 0.8235294, 1)
 theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
-theme_override_font_sizes/font_size = 26
+theme_override_font_sizes/font_size = 23
 theme_override_styles/normal = SubResource("StyleBoxFlat_cyqav")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_cyqav")
 theme_override_styles/hover = SubResource("StyleBoxFlat_baxkn")
@@ -1750,14 +1747,14 @@ horizontal_alignment = 2
 [node name="NameTag" type="PanelContainer" parent="DialogueBox" unique_id=654044806]
 layout_mode = 0
 offset_left = 42.0
-offset_right = 320.0
-offset_bottom = 58.0
+offset_right = 310.0
+offset_bottom = 48.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_20oq5")
 
 [node name="SpeakerLabel" type="Label" parent="DialogueBox/NameTag" unique_id=1436235277]
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 0.972549, 0.92156863, 1)
-theme_override_font_sizes/font_size = 26
+theme_override_font_sizes/font_size = 23
 text = "Chief Bumble"
 horizontal_alignment = 1
 
@@ -1766,6 +1763,8 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 theme = ExtResource("2_bma8u")
 
 [node name="Dim" type="ColorRect" parent="PauseScreen" unique_id=810571105]
@@ -1780,8 +1779,6 @@ anchor_left = 0.34
 anchor_top = 0.2
 anchor_right = 0.66
 anchor_bottom = 0.8
-offset_right = 40.0
-offset_bottom = 40.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_plh64")
 
 [node name="VBox" type="VBoxContainer" parent="PauseScreen/Panel" unique_id=2043120299]
@@ -1858,12 +1855,10 @@ text = "Quit Game"
 
 [node name="MessageCard" type="PanelContainer" parent="." unique_id=1769058066]
 anchors_preset = -1
-anchor_left = 0.22
+anchor_left = 0.2
 anchor_top = 0.11
-anchor_right = 0.78
+anchor_right = 0.8
 anchor_bottom = 0.19
-offset_right = 40.0
-offset_bottom = 40.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_sqpsx")
 
 [node name="MessageLabel" type="Label" parent="MessageCard" unique_id=546611046]
@@ -1875,12 +1870,10 @@ autowrap_mode = 3
 
 [node name="EpilogueBar" type="PanelContainer" parent="." unique_id=508221661]
 anchors_preset = -1
-anchor_left = 0.12
-anchor_top = 0.82
-anchor_right = 0.88
+anchor_left = 0.1
+anchor_top = 0.81
+anchor_right = 0.9
 anchor_bottom = 0.94
-offset_right = 40.0
-offset_bottom = 40.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_1ofdu")
 
 [node name="EpilogueLabel" type="Label" parent="EpilogueBar" unique_id=2011180897]
@@ -1896,6 +1889,8 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 theme = ExtResource("2_bma8u")
 
 [node name="Dim" type="ColorRect" parent="EndCard" unique_id=906287054]
@@ -1910,8 +1905,6 @@ anchor_left = 0.22
 anchor_top = 0.22
 anchor_right = 0.78
 anchor_bottom = 0.78
-offset_right = 40.0
-offset_bottom = 40.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_8um6u")
 
 [node name="VBox" type="VBoxContainer" parent="EndCard/Panel" unique_id=1808543904]

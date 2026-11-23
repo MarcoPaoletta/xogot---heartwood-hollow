@@ -126,8 +126,15 @@ func _setup_vfx() -> void:
 		spore_ring.visible = false
 
 
-func set_hostile_mode(hostile: bool) -> void:
-	if state == State.CALM or state == State.POOFED or state == State.DANCE:
+func set_hostile_mode(hostile: bool, force_reset: bool = false) -> void:
+	if force_reset and hostile:
+		state = State.ALERT
+		hp = max_hp
+		visible = true
+		collision_layer = 8
+		collision_mask = 11
+		set_physics_process(true)
+	elif state == State.CALM or state == State.POOFED or state == State.DANCE:
 		return
 	is_active_hostile = hostile
 	_update_anger_mark()
@@ -249,6 +256,15 @@ func _poof_away() -> void:
 
 
 func _physics_process(delta: float) -> void:
+	# Stay peaceful idle during Title Screen and open Dialogue so monsters never cheap-shot Wren!
+	if Story != null and (not Story.run_active or Story.dialogue_open):
+		velocity.x = 0.0
+		velocity.z = 0.0
+		if not is_on_floor():
+			velocity.y -= 20.0 * delta
+		move_and_slide()
+		return
+
 	if _flash_timer > 0.0:
 		_flash_timer -= delta
 		if _flash_timer <= 0.0:
