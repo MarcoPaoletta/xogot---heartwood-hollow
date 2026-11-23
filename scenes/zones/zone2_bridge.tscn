@@ -2,6 +2,7 @@
 
 [ext_resource type="Material" uid="uid://di7560qc3mhon" path="res://assets/resources/env/river_water_mat.tres" id="1_gl3uf"]
 [ext_resource type="PackedScene" uid="uid://dsil7k458uogr" path="res://assets/kenney/survival-kit/GLB format/campfire-pit.glb" id="2_62f4r"]
+[ext_resource type="Material" uid="uid://1ll3htmyspc6" path="res://assets/resources/env/forest_ground_mat.tres" id="2_87vru"]
 [ext_resource type="PackedScene" uid="uid://cau8y8j33x03x" path="res://assets/quaternius/ultimate-modular-ruins/FBX/Wall_ArchRound_Overgrown.fbx" id="3_87vru"]
 [ext_resource type="PackedScene" uid="uid://5qrsapfawy5" path="res://assets/quaternius/ultimate-modular-ruins/FBX/Column_Round_Short.fbx" id="4_chqq6"]
 [ext_resource type="PackedScene" uid="uid://bv8swjvn4aaue" path="res://assets/quaternius/stylized-nature-megakit/glTF/Mushroom_Common.gltf" id="5_recuj"]
@@ -36,11 +37,11 @@ size = Vector3(120, 0.4, 18)
 [sub_resource type="BoxMesh" id="BoxMesh_27wlu"]
 size = Vector3(120, 0.4, 2.2)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_0sqi3"]
-size = Vector3(48, 3, 13.5)
+[sub_resource type="BoxShape3D" id="BoxShape3D_chqq6"]
+size = Vector3(48, 3, 12.6)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_4sdo2"]
-size = Vector3(10.4, 3, 13.5)
+[sub_resource type="BoxShape3D" id="BoxShape3D_recuj"]
+size = Vector3(9.8, 3, 12.6)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_rt1k0"]
 size = Vector3(36, 3, 13.5)
@@ -65,23 +66,25 @@ mesh = SubResource("BoxMesh_qhtpb")
 
 [node name="BankS" type="MeshInstance3D" parent="River" unique_id=537362115]
 transform = Transform3D(1, 0, 0, 0, 0.95105654, -0.309017, 0, 0.309017, 0.95105654, 0, -0.32, -72.6)
+material_override = ExtResource("2_87vru")
 mesh = SubResource("BoxMesh_27wlu")
 
 [node name="BankN" type="MeshInstance3D" parent="River" unique_id=1245593718]
 transform = Transform3D(1, 0, 0, 0, 0.95105654, 0.309017, 0, -0.309017, 0.95105654, 0, -0.32, -87.4)
+material_override = ExtResource("2_87vru")
 mesh = SubResource("BoxMesh_27wlu")
 
 [node name="BlockLeft" type="StaticBody3D" parent="River" unique_id=659005768]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26, 1, -80)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.2, 1, -80)
 
 [node name="Shape" type="CollisionShape3D" parent="River/BlockLeft" unique_id=1100697870]
-shape = SubResource("BoxShape3D_0sqi3")
+shape = SubResource("BoxShape3D_chqq6")
 
 [node name="BlockMidR" type="StaticBody3D" parent="River" unique_id=2031177905]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.2, 1, -80)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.1, 1, -80)
 
 [node name="Shape" type="CollisionShape3D" parent="River/BlockMidR" unique_id=1736753862]
-shape = SubResource("BoxShape3D_4sdo2")
+shape = SubResource("BoxShape3D_recuj")
 
 [node name="BlockFarR" type="StaticBody3D" parent="River" unique_id=430870105]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 1, -80)

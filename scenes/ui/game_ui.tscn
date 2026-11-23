@@ -1471,10 +1471,10 @@ text = "♥"
 layout_mode = 0
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -460.0
-offset_top = 22.0
-offset_right = -28.0
-offset_bottom = 84.0
+offset_left = -456.0
+offset_top = 66.0
+offset_right = -24.0
+offset_bottom = 124.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_fct72")
 
 [node name="HBox" type="HBoxContainer" parent="HUD/QuestPill" unique_id=1678873522]

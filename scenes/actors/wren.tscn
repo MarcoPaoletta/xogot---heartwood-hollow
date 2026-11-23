@@ -46,7 +46,8 @@ radius = 0.25
 [node name="Wren" type="CharacterBody3D" unique_id=38665821]
 collision_layer = 2
 collision_mask = 13
-floor_max_angle = 0.82
+floor_max_angle = 0.88
+floor_snap_length = 0.3
 script = ExtResource("1_8dxyc")
 
 [node name="BodyCollider" type="CollisionShape3D" parent="." unique_id=241956756]
@@ -83,11 +84,11 @@ use_external_skeleton = true
 external_skeleton = NodePath("../WrenModel/CharacterArmature/Skeleton3D")
 script = ExtResource("3_755b2")
 mount_profile = ExtResource("6_qwk4c")
-offset_position = Vector3(0, -0.01, -0.04)
-offset_rotation_degrees = Vector3(82, 8, -24)
+offset_position = Vector3(0, 0, 0.02)
+offset_rotation_degrees = Vector3(12.09, 11.18, 49.43)
 
 [node name="M01Sword" parent="VisualRoot/SwordMount" unique_id=2135430319 instance=ExtResource("7_nnkt7")]
-transform = Transform3D(1.6971979, 1.0573639, 0.038738307, -0.113213606, 0.2542819, -1.9805361, -1.0519989, 1.6784879, 0.27563736, 0, -0.02, -0.08)
+transform = Transform3D(1.3377646, -1.4375695, 0.37918273, 1.4855273, 1.2719022, -0.4188958, 0.059954256, 0.56183517, 1.9185272, 0, 0, 0.04)
 
 [node name="LanternHipMount" type="BoneAttachment3D" parent="VisualRoot" unique_id=1463885549]
 bone_name = "Hips"

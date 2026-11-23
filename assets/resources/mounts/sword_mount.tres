@@ -4,5 +4,5 @@
 
 [resource]
 script = ExtResource("1_otdh2")
-position_offset = Vector3(0, -0.01, -0.04)
-rotation_degrees_offset = Vector3(82, 8, -24)
+position_offset = Vector3(0, 0, 0.02)
+rotation_degrees_offset = Vector3(12.09, 11.18, 49.43)
