@@ -1,6 +1,6 @@
 # Audio licenses
 
-Every sound in `assets/audio/` was downloaded at setup on 2026-11-21 from its official page. All of it is CC0 1.0 (public domain dedication): no attribution is required, the credits below are a courtesy. Add a row for anything added later (GDD Section 11).
+The music and ambience in `assets/audio/music/` and `assets/audio/ambience/` were downloaded at setup on 2026-11-21 from their official pages. All of it is CC0 1.0 (public domain dedication): no attribution is required, the credits below are a courtesy. The effects and stingers are original, synthesized from code for this game (see below). Add a row for anything added later (GDD Section 11).
 
 ## Music (`assets/audio/music/`)
 
@@ -14,21 +14,40 @@ Each track was chosen from its description and license page; listen to each one 
 | `forest_whisper.ogg` | Mysterious variant, Foggy Ruins | 82.3 s | Cleyton Kauffman | CC0 | [Forest Whisper Theme](https://opengameart.org/content/forest-whisper-theme) (described as a seamless loop) |
 | `beautiful_forest.ogg` | Awe variant, Heart Chamber | 70.0 s | nene | CC0 | [Beautiful Forest (Orchestra)](https://opengameart.org/content/beautiful-forest-orchestra) |
 
-## Stingers (`assets/audio/stingers/kenney-music-jingles/`)
+## Stingers (`assets/audio/stingers/`)
 
-| Folder | Use | Author | License | Source |
-| :-- | :-- | :-- | :-- | :-- |
-| `Hit jingles/`, `Pizzicato jingles/`, `Sax jingles/`, `Steel jingles/` | The three ending stingers, the honey and calm moments | Kenney | CC0 (`License.txt`) | [Music Jingles](https://kenney.nl/assets/music-jingles) |
+Original, synthesized by `tools/audio/make_sfx.py` (plucked strings, steel pan and bell partials, no samples), owned by the project under its MIT license.
 
-The pack's `8-Bit jingles` folder was left out on purpose: the GDD forbids chiptune.
+| File | Use | Length |
+| :-- | :-- | --: |
+| `ending_forest.ogg` | Ending: Return it to the forest | 1.9 s |
+| `ending_home.ogg` | Ending: Carry it home to Thistle | 1.9 s |
+| `ending_share.ogg` | Ending: Share the light | 1.7 s |
+| `choice_honey.ogg` | Offer the honey | 2.1 s |
+| `choice_fight.ogg` | Fight for the bridge | 0.3 s |
+| `calm_burst.ogg` | Calm burst | 1.2 s |
+| `seed_awaken.ogg` | The Heartseed awakens | 1.9 s |
+
+No chiptune and no 8 bit sounds anywhere (GDD Section 11).
 
 ## Effects (`assets/audio/sfx/`)
 
-| Folder | Covers | Author | License | Source |
-| :-- | :-- | :-- | :-- | :-- |
-| `kenney-rpg-audio/` | Footsteps, cloth and leather (lantern raise), wood creaks, knife swishes (sword swing), coins, books | Kenney | CC0 (`License.txt`) | [RPG Audio](https://kenney.nl/assets/rpg-audio) |
-| `kenney-impact-sounds/` | Footsteps on grass, wood and concrete, wooden and soft impacts (sword bonk), bells | Kenney | CC0 (`License.txt`) | [Impact Sounds](https://kenney.nl/assets/impact-sounds) |
-| `kenney-interface-sounds/` | Button clicks, hovers, confirmations, dialogue blips | Kenney | CC0 (`License.txt`) | [Interface Sounds](https://kenney.nl/assets/interface-sounds) |
+Original, synthesized by `tools/audio/make_sfx.py` (filtered noise, modal wood and metal resonators, sine glides, no samples), owned by the project under its MIT license. Rebuild with `py -3 tools/audio/make_sfx.py`; every random stream is seeded, so a rebuild gives the same sounds, and the script prints the length, peak and RMS of each file.
+
+| Files | Covers |
+| :-- | :-- |
+| `step_dirt_1..4`, `step_wood_1..4`, `step_stone_1..3` | Footsteps on dirt, planks and stone |
+| `cloth_1..3` | Lantern raise and lower |
+| `calm_chime_1..2` | The calm chime |
+| `sword_swish_1..2`, `wood_bonk_1..4` | Wooden sword swings and bonks |
+| `sparkle_poof_1..2` | The sparkle poof |
+| `monster_happy_1..2`, `monster_grumpy_1..2` | Monster squeaks, happy and grumpy |
+| `player_hurt_1..2` | Wren takes a hit |
+| `honey_pour_1..2` | The honey pour |
+| `dialogue_blip_1..2` | Dialogue blips |
+| `ui_hover`, `ui_click_1..2`, `ui_reject` | Buttons |
+| `shield_equip` | Captain Rook's shield |
+| `brazier_light` | The braziers ignite |
 
 ## Ambience (`assets/audio/ambience/`)
 
@@ -40,4 +59,4 @@ The pack's `8-Bit jingles` folder was left out on purpose: the GDD forbids chipt
 
 The two park files are 90 s excerpts (from second 20, 1 s fades, OGG Vorbis q5) of the original 7.5 and 8.6 minute WAV recordings (86 and 99 MB), cut at setup to keep the repo light. CC0 allows the edit.
 
-Not provided, to be made in the game: monster squeaks, the calm chime, the sparkle poof, the honey pour and the seed awakening swell can be layered from the effects above (pitch, layering and filters in the audio bus) or synthesized.
+Every effect role of the GDD has its own file in the tables above.

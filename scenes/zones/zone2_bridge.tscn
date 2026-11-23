@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bfb6mtsj5eb7r"]
 
 [ext_resource type="Material" uid="uid://di7560qc3mhon" path="res://assets/resources/env/river_water_mat.tres" id="1_gl3uf"]
-[ext_resource type="PackedScene" uid="uid://dsil7k458uogr" path="res://assets/kenney/survival-kit/GLB format/campfire-pit.glb" id="2_62f4r"]
+[ext_resource type="PackedScene" uid="uid://bvxxy48mrexdx" path="res://assets/quaternius/medieval-village-pack/FBX/Bonfire.fbx" id="2_62f4r"]
 [ext_resource type="Material" uid="uid://1ll3htmyspc6" path="res://assets/resources/env/forest_ground_mat.tres" id="2_87vru"]
 [ext_resource type="PackedScene" uid="uid://cau8y8j33x03x" path="res://assets/quaternius/ultimate-modular-ruins/FBX/Wall_ArchRound_Overgrown.fbx" id="3_87vru"]
 [ext_resource type="PackedScene" uid="uid://5qrsapfawy5" path="res://assets/quaternius/ultimate-modular-ruins/FBX/Column_Round_Short.fbx" id="4_chqq6"]
@@ -20,7 +20,7 @@
 [ext_resource type="PackedScene" uid="uid://bqirvc7fs5pka" path="res://scenes/monsters/monster_winged.tscn" id="17_khlrw"]
 [ext_resource type="PackedScene" uid="uid://1vnkd75rlwik" path="res://scenes/monsters/monster_mushroom.tscn" id="18_f781b"]
 [ext_resource type="PackedScene" uid="uid://yjab8fxjotxu" path="res://scenes/monsters/monster_furball.tscn" id="19_injjf"]
-[ext_resource type="PackedScene" uid="uid://ddri6wnomf6hr" path="res://assets/kenney/survival-kit/GLB format/tent-canvas.glb" id="20_cgmna"]
+[ext_resource type="PackedScene" uid="uid://choquv6xxibdo" path="res://assets/quaternius/survival-pack/FBX/Tent.fbx" id="20_cgmna"]
 [ext_resource type="PackedScene" uid="uid://dv6ck5u3bnqps" path="res://assets/quaternius/fantasy-props-megakit/glTF/Banner_1.gltf" id="21_ioreq"]
 [ext_resource type="PackedScene" uid="uid://driyb8loog0cj" path="res://assets/quaternius/fantasy-props-megakit/glTF/Crate_Wooden.gltf" id="22_olabq"]
 [ext_resource type="PackedScene" uid="uid://dp7iss6b1g0uk" path="res://assets/quaternius/fantasy-props-megakit/glTF/Barrel.gltf" id="23_0wm2q"]
@@ -98,7 +98,7 @@ shape = SubResource("BoxShape3D_rt1k0")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2, 0, -96.8)
 
 [node name="Pit" parent="Camp/CampfireZ2" unique_id=1703855139 instance=ExtResource("2_62f4r")]
-transform = Transform3D(4.5, 0, 0, 0, 4.5, 0, 0, 0, 4.5, 0, 0, 0)
+transform = Transform3D(3.1, 0, 0, 0, 3.1, 0, 0, 0, 3.1, 0, 0, 0)
 
 [node name="FireLight" type="OmniLight3D" parent="Camp/CampfireZ2" unique_id=1210976965]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
@@ -228,7 +228,7 @@ start_grumpy = false
 transform = Transform3D(0.9396926, 0, 0.34202012, 0, 1, 0, -0.34202012, 0, 0.9396926, -5.6, 0, -93.8)
 
 [node name="Tent" parent="CampTent1" unique_id=1990994153 instance=ExtResource("20_cgmna")]
-transform = Transform3D(6, 0, 0, 0, 5.8, 0, 0, 0, 6, 0, 0, 0)
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 0, 0, 0)
 
 [node name="Banner" parent="CampTent1" unique_id=1487827395 instance=ExtResource("21_ioreq")]
 transform = Transform3D(0.85, 0, 0, 0, 0.85, 0, 0, 0, 0.85, 0, 2.3, 1.55)
@@ -246,7 +246,7 @@ transform = Transform3D(1.25, 0, 0, 0, 1.25, 0, 0, 0, 1.25, 1.7, 2.15, 1.45)
 transform = Transform3D(0.9396926, 0, -0.34202012, 0, 1, 0, 0.34202012, 0, 0.9396926, 6.4, 0, -93.8)
 
 [node name="Tent" parent="CampTent2" unique_id=264288812 instance=ExtResource("20_cgmna")]
-transform = Transform3D(6, 0, 0, 0, 5.8, 0, 0, 0, 6, 0, 0, 0)
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 0, 0, 0)
 
 [node name="Banner" parent="CampTent2" unique_id=1754297714 instance=ExtResource("21_ioreq")]
 transform = Transform3D(0.85, 0, 0, 0, 0.85, 0, 0, 0, 0.85, 0, 2.3, 1.55)

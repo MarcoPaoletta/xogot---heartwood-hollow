@@ -17,8 +17,8 @@
 [ext_resource type="PackedScene" uid="uid://c5n20ohdm8ug" path="res://assets/quaternius/medieval-village-megakit/glTF/Wall_Arch.gltf" id="15_xb6dk"]
 [ext_resource type="PackedScene" uid="uid://cn60p7w1q28ft" path="res://assets/quaternius/medieval-village-megakit/glTF/Wall_UnevenBrick_Straight.gltf" id="16_vnsrf"]
 [ext_resource type="PackedScene" uid="uid://dvc2w5erf6vhe" path="res://assets/modeler/m02_brass_lantern/m02_brass_lantern.tscn" id="17_gxiv4"]
-[ext_resource type="PackedScene" uid="uid://u328v6xmo2m6" path="res://assets/kenney/survival-kit/GLB format/signpost.glb" id="18_27mdn"]
-[ext_resource type="PackedScene" uid="uid://dsil7k458uogr" path="res://assets/kenney/survival-kit/GLB format/campfire-pit.glb" id="19_c0use"]
+[ext_resource type="PackedScene" uid="uid://bw81cwaelyk5i" path="res://assets/quaternius/ultimate-platformer-pack/glTF/Arrow_Side.gltf" id="18_27mdn"]
+[ext_resource type="PackedScene" uid="uid://bvxxy48mrexdx" path="res://assets/quaternius/medieval-village-pack/FBX/Bonfire.fbx" id="19_c0use"]
 [ext_resource type="PackedScene" uid="uid://cau8y8j33x03x" path="res://assets/quaternius/ultimate-modular-ruins/FBX/Wall_ArchRound_Overgrown.fbx" id="20_qc6fl"]
 [ext_resource type="PackedScene" uid="uid://5qrsapfawy5" path="res://assets/quaternius/ultimate-modular-ruins/FBX/Column_Round_Short.fbx" id="21_nj1gd"]
 [ext_resource type="PackedScene" uid="uid://mxlgedilpx7h" path="res://assets/quaternius/ultimate-modular-ruins/FBX/Bricks.fbx" id="22_82lt4"]
@@ -200,13 +200,13 @@ transform = Transform3D(1.45, 0, 0, 0, 1.45, 0, 0, 0, 1.45, -2.6, 3.05, 37.9)
 transform = Transform3D(1.45, 0, 0, 0, 1.45, 0, 0, 0, 1.45, 2.6, 3.05, 37.9)
 
 [node name="Signpost" parent="Village" unique_id=1210498019 instance=ExtResource("18_27mdn")]
-transform = Transform3D(3.4439695, 0, -1.6059494, 0, 3.8, 0, 1.6059494, 0, 3.4439695, 3.2, 0, 35)
+transform = Transform3D(0.815677, 0, -0.3803564, 0, 0.9, 0, 0.3803564, 0, 0.815677, 3.2, 0, 35)
 
 [node name="CampfireZ1" type="Node3D" parent="Village" unique_id=1074058526]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.6, 0, 39.8)
 
 [node name="Pit" parent="Village/CampfireZ1" unique_id=1703855139 instance=ExtResource("19_c0use")]
-transform = Transform3D(4.5, 0, 0, 0, 4.5, 0, 0, 0, 4.5, 0, 0, 0)
+transform = Transform3D(3.1, 0, 0, 0, 3.1, 0, 0, 0, 3.1, 0, 0, 0)
 
 [node name="FireLight" type="OmniLight3D" parent="Village/CampfireZ1" unique_id=1644483390]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)

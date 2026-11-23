@@ -10,6 +10,7 @@ Records provenance, license, project-relative destination, and restoration instr
 | Level 3D geometry | `assets/modeler/level/` | Xogot Modeler (Bezier Plane/Block, Poly/Cube) | Committed directly in this repository |
 | Shared Modeler materials | `assets/modeler/_materials/` | StandardMaterial3D resources via `xo material` | Committed directly in this repository |
 | Shaders & gameplay scripts | `assets/shaders/`, `scripts/` | Authored in-project | Committed directly in this repository |
+| Sound effects & stingers | `assets/audio/sfx/`, `assets/audio/stingers/` | Synthesized from code by `tools/audio/make_sfx.py` (no samples) | Committed; rebuild with `py -3 tools/audio/make_sfx.py` |
 
 ## Third-Party CC0 & OFL Assets (Committed in Git, Unmodified Sources)
 
@@ -23,7 +24,8 @@ Records provenance, license, project-relative destination, and restoration instr
 | Ultimate Modular Ruins | Quaternius | CC0 1.0 | `assets/quaternius/ultimate-modular-ruins/` | https://quaternius.com/packs/ultimatemodularruins.html | FBX ruins arches & walls |
 | Medieval Village MegaKit | Quaternius | CC0 1.0 | `assets/quaternius/medieval-village-megakit/` | https://quaternius.com/packs/medievalvillagemegakit.html | Free tier village houses & arch |
 | Fantasy Props MegaKit | Quaternius | CC0 1.0 | `assets/quaternius/fantasy-props-megakit/` | https://quaternius.com/packs/fantasypropsmegakit.html | Free tier crates, barrels, stalls, banners |
-| Survival Kit | Kenney | CC0 1.0 | `assets/kenney/survival-kit/` | https://kenney.nl/assets/survival-kit | Tents, campfire-pit, campfire-stand, boxes |
+| Survival Pack | Quaternius | CC0 1.0 | `assets/quaternius/survival-pack/` | https://quaternius.com/packs/survival.html | `Tent` only (camp tents) |
+| Medieval Village Pack | Quaternius | CC0 1.0 | `assets/quaternius/medieval-village-pack/` | https://quaternius.com/packs/medievalvillage.html | `Bonfire` only (campfire pits, brazier firewood) |
+| Ultimate Platformer Pack | Quaternius | CC0 1.0 | `assets/quaternius/ultimate-platformer-pack/` | https://quaternius.com/packs/ultimateplatformer.html | `Arrow_Side` only (signpost) |
 | Music & Ambience | OpenGameArt contributors | CC0 1.0 | `assets/audio/music/`, `assets/audio/ambience/` | See `docs/AUDIO_LICENSES.md` | 5 music loops + 3 ambience loops |
-| SFX & Stingers | Kenney | CC0 1.0 | `assets/audio/sfx/`, `assets/audio/stingers/` | See `docs/AUDIO_LICENSES.md` | RPG Audio, Impact, Interface, Music Jingles (no 8-bit) |
 | Fonts (Fredoka / Baloo 2 / Lilita One) | Google Fonts | SIL OFL 1.1 | `assets/fonts/` | Google Fonts (`OFL.txt` beside font) | Selected font promoted to `assets/fonts/` |

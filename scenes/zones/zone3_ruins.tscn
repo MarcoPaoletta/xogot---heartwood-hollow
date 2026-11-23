@@ -8,8 +8,8 @@
 [ext_resource type="PackedScene" uid="uid://sae0meoyytrq" path="res://assets/quaternius/ultimate-modular-ruins/FBX/Statue_Stag.fbx" id="6_knllr"]
 [ext_resource type="PackedScene" uid="uid://wrd4jfga5ghw" path="res://assets/quaternius/ultimate-modular-ruins/FBX/Column_Round.fbx" id="7_cq4kc"]
 [ext_resource type="PackedScene" uid="uid://5qrsapfawy5" path="res://assets/quaternius/ultimate-modular-ruins/FBX/Column_Round_Short.fbx" id="8_6yt4x"]
-[ext_resource type="PackedScene" uid="uid://dsil7k458uogr" path="res://assets/kenney/survival-kit/GLB format/campfire-pit.glb" id="9_mmaax"]
-[ext_resource type="PackedScene" uid="uid://ci85q04ll234l" path="res://assets/kenney/survival-kit/GLB format/campfire-stand.glb" id="10_2qi1t"]
+[ext_resource type="PackedScene" uid="uid://bvxxy48mrexdx" path="res://assets/quaternius/medieval-village-pack/FBX/Bonfire.fbx" id="9_mmaax"]
+[ext_resource type="PackedScene" uid="uid://ckq5brhw1pse7" path="res://scenes/props/ruin_brazier.tscn" id="10_2qi1t"]
 [ext_resource type="Material" uid="uid://dve2w2jwp1d5c" path="res://assets/resources/env/fog_card_mat.tres" id="11_8bq44"]
 [ext_resource type="Material" uid="uid://eh8syb68ede2" path="res://assets/modeler/_materials/seed_core.tres" id="12_7fxmf"]
 [ext_resource type="PackedScene" uid="uid://bqsx677lsrtti" path="res://scenes/monsters/monster_blob.tscn" id="13_ma7gc"]
@@ -84,7 +84,7 @@ transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, -173.5)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.8, 0, -118)
 
 [node name="Pit" parent="Ruins/CampfireZ3" unique_id=1703855139 instance=ExtResource("9_mmaax")]
-transform = Transform3D(4.5, 0, 0, 0, 4.5, 0, 0, 0, 4.5, 0, 0, 0)
+transform = Transform3D(3.1, 0, 0, 0, 3.1, 0, 0, 0, 3.1, 0, 0, 0)
 
 [node name="FireLight" type="OmniLight3D" parent="Ruins/CampfireZ3" unique_id=749421137]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
@@ -99,13 +99,13 @@ mesh = SubResource("SphereMesh_hwlur")
 [node name="Braziers" type="Node3D" parent="." unique_id=330017263]
 
 [node name="Brazier_0" parent="Braziers" unique_id=998222046 instance=ExtResource("10_2qi1t")]
-transform = Transform3D(4.2, 0, 0, 0, 4.2, 0, 0, 0, 4.2, -2.6, 0, -150)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.6, 0, -150)
 
 [node name="Brazier_1" parent="Braziers" unique_id=1907779608 instance=ExtResource("10_2qi1t")]
-transform = Transform3D(3.2173865, 0, 2.6997077, 0, 4.2, 0, -2.6997077, 0, 3.2173865, 2.8, 0, -159)
+transform = Transform3D(0.7660444, 0, 0.6427875, 0, 1, 0, -0.6427875, 0, 0.7660444, 2.8, 0, -159)
 
 [node name="Brazier_2" parent="Braziers" unique_id=254840092 instance=ExtResource("10_2qi1t")]
-transform = Transform3D(0.7293225, 0, 4.1361923, 0, 4.2, 0, -4.1361923, 0, 0.7293225, -2.2, 0, -169)
+transform = Transform3D(0.1736482, 0, 0.9848077, 0, 1, 0, -0.9848077, 0, 0.1736482, -2.2, 0, -169)
 
 [node name="BrazierFlames" type="Node3D" parent="." unique_id=916479069]
 visible = false

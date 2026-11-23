@@ -27,7 +27,7 @@ The full spec is `docs/GDD.md` (PDF in `docs/GDD.pdf`, concepts in `docs/concept
 
 ## Repo layout
 
-`assets/quaternius/`, `assets/kenney/` third-party CC0 packs; `assets/audio/` CC0 music and effects; `assets/fonts/candidates/` OFL fonts; `assets/modeler/` Xogot Modeler assets (built in the game); `scenes/`, `scripts/`, `tests/`; `docs/` GDD, concepts, logs.
+`assets/quaternius/` third-party CC0 packs; `assets/audio/` CC0 music and ambience plus original effects and stingers (`tools/audio/make_sfx.py`); `assets/fonts/candidates/` OFL fonts; `assets/modeler/` Xogot Modeler assets (built in the game); `scenes/`, `scripts/`, `tests/`; `docs/` GDD, concepts, logs.
 
 ## License
 
@@ -35,4 +35,4 @@ Code and project-authored content: MIT (`LICENSE`). Third-party assets keep thei
 
 ## Credits
 
-Quaternius and Kenney (CC0 models and sounds), OpenGameArt composers listed in `docs/AUDIO_LICENSES.md`, Google Fonts (OFL), Xogot by Xibbon, made by [Letta Corporation](https://www.youtube.com/@lettacorporation).
+Quaternius (CC0 models), OpenGameArt composers listed in `docs/AUDIO_LICENSES.md`, Google Fonts (OFL), Xogot by Xibbon, made by [Letta Corporation](https://www.youtube.com/@lettacorporation).

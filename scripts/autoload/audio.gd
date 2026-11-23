@@ -26,95 +26,95 @@ const AMBIENCE_TRACKS: Dictionary = {
 
 const SFX_PATHS: Dictionary = {
 	&"step_dirt": [
-		"res://assets/audio/sfx/kenney-impact-sounds/footstep_grass_000.ogg",
-		"res://assets/audio/sfx/kenney-impact-sounds/footstep_grass_001.ogg",
-		"res://assets/audio/sfx/kenney-impact-sounds/footstep_grass_002.ogg",
-		"res://assets/audio/sfx/kenney-impact-sounds/footstep_grass_003.ogg",
+		"res://assets/audio/sfx/step_dirt_1.ogg",
+		"res://assets/audio/sfx/step_dirt_2.ogg",
+		"res://assets/audio/sfx/step_dirt_3.ogg",
+		"res://assets/audio/sfx/step_dirt_4.ogg",
 	],
 	&"step_wood": [
-		"res://assets/audio/sfx/kenney-impact-sounds/footstep_wood_000.ogg",
-		"res://assets/audio/sfx/kenney-impact-sounds/footstep_wood_001.ogg",
-		"res://assets/audio/sfx/kenney-impact-sounds/footstep_wood_002.ogg",
-		"res://assets/audio/sfx/kenney-impact-sounds/footstep_wood_003.ogg",
+		"res://assets/audio/sfx/step_wood_1.ogg",
+		"res://assets/audio/sfx/step_wood_2.ogg",
+		"res://assets/audio/sfx/step_wood_3.ogg",
+		"res://assets/audio/sfx/step_wood_4.ogg",
 	],
 	&"step_stone": [
-		"res://assets/audio/sfx/kenney-impact-sounds/footstep_concrete_000.ogg",
-		"res://assets/audio/sfx/kenney-impact-sounds/footstep_concrete_001.ogg",
-		"res://assets/audio/sfx/kenney-impact-sounds/footstep_concrete_002.ogg",
+		"res://assets/audio/sfx/step_stone_1.ogg",
+		"res://assets/audio/sfx/step_stone_2.ogg",
+		"res://assets/audio/sfx/step_stone_3.ogg",
 	],
 	&"lantern_raise": [
-		"res://assets/audio/sfx/kenney-rpg-audio/cloth1.ogg",
-		"res://assets/audio/sfx/kenney-rpg-audio/cloth2.ogg",
+		"res://assets/audio/sfx/cloth_1.ogg",
+		"res://assets/audio/sfx/cloth_2.ogg",
 	],
 	&"lantern_lower": [
-		"res://assets/audio/sfx/kenney-rpg-audio/cloth3.ogg",
+		"res://assets/audio/sfx/cloth_3.ogg",
 	],
 	&"calm_chime": [
-		"res://assets/audio/stingers/kenney-music-jingles/Pizzicato jingles/jingles_PIZZI10.ogg",
-		"res://assets/audio/stingers/kenney-music-jingles/Pizzicato jingles/jingles_PIZZI16.ogg",
+		"res://assets/audio/sfx/calm_chime_1.ogg",
+		"res://assets/audio/sfx/calm_chime_2.ogg",
 	],
 	&"sword_swing": [
-		"res://assets/audio/sfx/kenney-rpg-audio/knifeSlice.ogg",
-		"res://assets/audio/sfx/kenney-rpg-audio/knifeSlice2.ogg",
+		"res://assets/audio/sfx/sword_swish_1.ogg",
+		"res://assets/audio/sfx/sword_swish_2.ogg",
 	],
 	&"sword_bonk": [
-		"res://assets/audio/sfx/kenney-impact-sounds/impactWood_medium_000.ogg",
-		"res://assets/audio/sfx/kenney-impact-sounds/impactWood_medium_001.ogg",
-		"res://assets/audio/sfx/kenney-impact-sounds/impactWood_medium_002.ogg",
-		"res://assets/audio/sfx/kenney-impact-sounds/impactWood_medium_003.ogg",
+		"res://assets/audio/sfx/wood_bonk_1.ogg",
+		"res://assets/audio/sfx/wood_bonk_2.ogg",
+		"res://assets/audio/sfx/wood_bonk_3.ogg",
+		"res://assets/audio/sfx/wood_bonk_4.ogg",
 	],
 	&"sparkle_poof": [
-		"res://assets/audio/sfx/kenney-interface-sounds/confirmation_002.ogg",
-		"res://assets/audio/sfx/kenney-interface-sounds/confirmation_003.ogg",
+		"res://assets/audio/sfx/sparkle_poof_1.ogg",
+		"res://assets/audio/sfx/sparkle_poof_2.ogg",
 	],
 	&"monster_happy": [
-		"res://assets/audio/sfx/kenney-interface-sounds/maximize_006.ogg",
-		"res://assets/audio/sfx/kenney-interface-sounds/maximize_008.ogg",
+		"res://assets/audio/sfx/monster_happy_1.ogg",
+		"res://assets/audio/sfx/monster_happy_2.ogg",
 	],
 	&"monster_grumpy": [
-		"res://assets/audio/sfx/kenney-impact-sounds/impactSoft_heavy_000.ogg",
-		"res://assets/audio/sfx/kenney-impact-sounds/impactSoft_heavy_001.ogg",
+		"res://assets/audio/sfx/monster_grumpy_1.ogg",
+		"res://assets/audio/sfx/monster_grumpy_2.ogg",
 	],
 	&"player_hurt": [
-		"res://assets/audio/sfx/kenney-impact-sounds/impactSoft_medium_001.ogg",
-		"res://assets/audio/sfx/kenney-impact-sounds/impactSoft_medium_002.ogg",
+		"res://assets/audio/sfx/player_hurt_1.ogg",
+		"res://assets/audio/sfx/player_hurt_2.ogg",
 	],
 	&"honey_pour": [
-		"res://assets/audio/sfx/kenney-rpg-audio/handleCoins.ogg",
-		"res://assets/audio/sfx/kenney-rpg-audio/handleCoins2.ogg",
+		"res://assets/audio/sfx/honey_pour_1.ogg",
+		"res://assets/audio/sfx/honey_pour_2.ogg",
 	],
 	&"dialogue_blip": [
-		"res://assets/audio/sfx/kenney-interface-sounds/tick_001.ogg",
-		"res://assets/audio/sfx/kenney-interface-sounds/tick_002.ogg",
+		"res://assets/audio/sfx/dialogue_blip_1.ogg",
+		"res://assets/audio/sfx/dialogue_blip_2.ogg",
 	],
 	&"ui_hover": [
-		"res://assets/audio/sfx/kenney-interface-sounds/drop_002.ogg",
+		"res://assets/audio/sfx/ui_hover.ogg",
 	],
 	&"ui_click": [
-		"res://assets/audio/sfx/kenney-interface-sounds/click_002.ogg",
-		"res://assets/audio/sfx/kenney-interface-sounds/click_003.ogg",
+		"res://assets/audio/sfx/ui_click_1.ogg",
+		"res://assets/audio/sfx/ui_click_2.ogg",
 	],
 	&"ui_reject": [
-		"res://assets/audio/sfx/kenney-interface-sounds/error_003.ogg",
+		"res://assets/audio/sfx/ui_reject.ogg",
 	],
 	&"seed_awaken": [
-		"res://assets/audio/stingers/kenney-music-jingles/Pizzicato jingles/jingles_PIZZI12.ogg",
+		"res://assets/audio/stingers/seed_awaken.ogg",
 	],
 	&"shield_equip": [
-		"res://assets/audio/sfx/kenney-impact-sounds/impactPlate_medium_000.ogg",
+		"res://assets/audio/sfx/shield_equip.ogg",
 	],
 	&"brazier_light": [
-		"res://assets/audio/sfx/kenney-rpg-audio/creak1.ogg",
+		"res://assets/audio/sfx/brazier_light.ogg",
 	],
 }
 
 const STINGER_PATHS: Dictionary = {
-	&"ending_forest": "res://assets/audio/stingers/kenney-music-jingles/Pizzicato jingles/jingles_PIZZI12.ogg",
-	&"ending_home": "res://assets/audio/stingers/kenney-music-jingles/Steel jingles/jingles_STEEL10.ogg",
-	&"ending_share": "res://assets/audio/stingers/kenney-music-jingles/Pizzicato jingles/jingles_PIZZI15.ogg",
-	&"choice_honey": "res://assets/audio/stingers/kenney-music-jingles/Pizzicato jingles/jingles_PIZZI07.ogg",
-	&"choice_fight": "res://assets/audio/stingers/kenney-music-jingles/Hit jingles/jingles_HIT08.ogg",
-	&"calm_burst": "res://assets/audio/stingers/kenney-music-jingles/Pizzicato jingles/jingles_PIZZI16.ogg",
+	&"ending_forest": "res://assets/audio/stingers/ending_forest.ogg",
+	&"ending_home": "res://assets/audio/stingers/ending_home.ogg",
+	&"ending_share": "res://assets/audio/stingers/ending_share.ogg",
+	&"choice_honey": "res://assets/audio/stingers/choice_honey.ogg",
+	&"choice_fight": "res://assets/audio/stingers/choice_fight.ogg",
+	&"calm_burst": "res://assets/audio/stingers/calm_burst.ogg",
 }
 
 @onready var _music_a: AudioStreamPlayer = get_node_or_null("MusicA") as AudioStreamPlayer

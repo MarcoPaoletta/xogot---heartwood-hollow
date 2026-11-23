@@ -25,8 +25,8 @@ The kickoff prompt is `docs/KICKOFF_PROMPT.md`: read the GDD and the skill, then
 
 ## What is already in the project (setup, 2026-11-21)
 
-- `assets/quaternius/` and `assets/kenney/`: CC0 packs, measured in `docs/MEASUREMENTS.md` (size, bottom, triangles, bones, clips, traps). Each pack keeps its license file. Scales and tints go on instances, never on the source files or their import settings.
-- `assets/audio/`: CC0 music, stingers, effects and ambience. Roles and sources in `docs/AUDIO_LICENSES.md`.
+- `assets/quaternius/`: CC0 packs, measured in `docs/MEASUREMENTS.md` (size, bottom, triangles, bones, clips, traps). Each pack keeps its license file. Scales and tints go on instances, never on the source files or their import settings.
+- `assets/audio/`: CC0 music and ambience, plus original effects and stingers synthesized by `tools/audio/make_sfx.py`. Roles and sources in `docs/AUDIO_LICENSES.md`.
 - `assets/fonts/candidates/`: three OFL fonts to try in the dialogue box (GDD Section 8.1).
 - Empty `scenes/`, `scripts/`, `tests/`, `assets/modeler/` folders and no main scene: the build starts from zero.
 - `docs/MODELER_LOG.md` with its sections, ready to fill.

@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://ckq5brhw1pse7"]
+
+[ext_resource type="PackedScene" uid="uid://5qrsapfawy5" path="res://assets/quaternius/ultimate-modular-ruins/FBX/Column_Round_Short.fbx" id="1_column"]
+[ext_resource type="PackedScene" uid="uid://bvxxy48mrexdx" path="res://assets/quaternius/medieval-village-pack/FBX/Bonfire.fbx" id="2_bonfire"]
+
+[node name="RuinBrazier" type="Node3D"]
+
+[node name="Pedestal" parent="." instance=ExtResource("1_column")]
+transform = Transform3D(0.9, 0, 0, 0, 0.55, 0, 0, 0, 0.9, 0, 0, 0)
+
+[node name="Firewood" parent="." instance=ExtResource("2_bonfire")]
+transform = Transform3D(1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, 0, 1.0, 0)

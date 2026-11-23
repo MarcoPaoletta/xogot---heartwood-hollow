@@ -1,6 +1,6 @@
 # Third-party notices
 
-Everything under `assets/quaternius/`, `assets/kenney/`, `assets/audio/` and `assets/fonts/` is third-party material under its own license, kept in its own folder with its license file. None of it is covered by the MIT license of this repository. All packs were downloaded on 2026-11-21 from the author's official page (free tiers only).
+Everything under `assets/quaternius/`, `assets/audio/music/`, `assets/audio/ambience/` and `assets/fonts/` is third-party material under its own license, kept in its own folder with its license file. None of it is covered by the MIT license of this repository. The packs were downloaded on 2026-11-21 from the author's official page (free tiers only); the Survival Pack, Medieval Village Pack and Ultimate Platformer Pack subsets were added on 2026-11-23 from Quaternius's own uploads of those packs.
 
 ## 3D models
 
@@ -14,9 +14,11 @@ Everything under `assets/quaternius/`, `assets/kenney/`, `assets/audio/` and `as
 | `assets/quaternius/ultimate-modular-ruins/` | Ultimate Modular Ruins Pack (FBX), architecture subset | Quaternius | CC0 1.0 | `License.txt` | [quaternius.com](https://quaternius.com/packs/ultimatemodularruins.html) |
 | `assets/quaternius/medieval-village-megakit/` | Medieval Village MegaKit, Standard (free) tier (glTF) | Quaternius | CC0 1.0 | `License_Standard.txt` | [quaternius.com](https://quaternius.com/packs/medievalvillagemegakit.html) |
 | `assets/quaternius/fantasy-props-megakit/` | Fantasy Props MegaKit, Standard (free) tier (glTF), subset | Quaternius | CC0 1.0 | `License_Standard.txt` | [quaternius.com](https://quaternius.com/packs/fantasypropsmegakit.html) |
-| `assets/kenney/survival-kit/` | Survival Kit (GLB), camp subset | Kenney | CC0 1.0 | `License.txt` | [kenney.nl](https://kenney.nl/assets/survival-kit) |
+| `assets/quaternius/survival-pack/` | Survival Pack (FBX), `Tent` only | Quaternius | CC0 1.0 | `License.txt` | [quaternius.com](https://quaternius.com/packs/survival.html) |
+| `assets/quaternius/medieval-village-pack/` | Medieval Village Pack (FBX), `Bonfire` only | Quaternius | CC0 1.0 | `License.txt` | [quaternius.com](https://quaternius.com/packs/medievalvillage.html) |
+| `assets/quaternius/ultimate-platformer-pack/` | Ultimate Platformer Pack (glTF), `Arrow_Side` signpost only | Quaternius | CC0 1.0 | `License.txt` | [quaternius.com](https://quaternius.com/packs/ultimateplatformer.html) |
 
-Subsets: the models of the categories the game builds itself in Xogot Modeler (trees, rocks, pebbles, weapons, shields, lanterns, torches, candles, pots, vases, bottles, potions, bridges) were left out of the Nature, Ruins, Fantasy Props and Survival packs on purpose, so no pack model can stand in for a Modeler asset. The full list of what each pack folder holds is in `docs/MEASUREMENTS.md`.
+Subsets: the models of the categories the game builds itself in Xogot Modeler (trees, rocks, pebbles, weapons, shields, lanterns, torches, candles, pots, vases, bottles, potions, bridges) were left out of the Nature, Ruins and Fantasy Props packs on purpose, so no pack model can stand in for a Modeler asset. The full list of what each pack folder holds is in `docs/MEASUREMENTS.md`.
 
 ## Audio
 
@@ -29,10 +31,6 @@ Subsets: the models of the categories the game builds itself in Xogot Modeler (t
 | `assets/audio/music/beautiful_forest.ogg` | nene | CC0 1.0 | [OpenGameArt](https://opengameart.org/content/beautiful-forest-orchestra) |
 | `assets/audio/ambience/forest_ambience.mp3` | TinyWorlds | CC0 1.0 | [OpenGameArt](https://opengameart.org/content/forest-ambience) |
 | `assets/audio/ambience/park_ambience_*_90s.ogg` (90 s excerpts) | thimras | CC0 1.0 | [OpenGameArt](https://opengameart.org/content/park-ambiences) |
-| `assets/audio/sfx/kenney-rpg-audio/` | Kenney | CC0 1.0 (`License.txt`) | [kenney.nl](https://kenney.nl/assets/rpg-audio) |
-| `assets/audio/sfx/kenney-impact-sounds/` | Kenney | CC0 1.0 (`License.txt`) | [kenney.nl](https://kenney.nl/assets/impact-sounds) |
-| `assets/audio/sfx/kenney-interface-sounds/` | Kenney | CC0 1.0 (`License.txt`) | [kenney.nl](https://kenney.nl/assets/interface-sounds) |
-| `assets/audio/stingers/kenney-music-jingles/` | Kenney | CC0 1.0 (`License.txt`) | [kenney.nl](https://kenney.nl/assets/music-jingles) |
 
 Roles and lengths: `docs/AUDIO_LICENSES.md`.
 
@@ -46,4 +44,4 @@ Roles and lengths: `docs/AUDIO_LICENSES.md`.
 
 ## Ours
 
-Everything else is project-authored and under the MIT license: every model made in Xogot Modeler (`assets/modeler/`), scenes, scripts, shaders, materials and docs.
+Everything else is project-authored and under the MIT license: every model made in Xogot Modeler (`assets/modeler/`), the sound effects in `assets/audio/sfx/` and the stingers in `assets/audio/stingers/` (synthesized from code by `tools/audio/make_sfx.py`, no samples), scenes, scripts, shaders, materials and docs.

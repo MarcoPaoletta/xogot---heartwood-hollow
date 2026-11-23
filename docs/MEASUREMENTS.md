@@ -10,39 +10,33 @@ Use these numbers to set instance scales. Keep every source file and its import 
 * Ultimate Monsters `Big/` models are in T pose at rest: scale them by height, not width.
 * RPG Character Pack characters measure about 3.0 m tall at rest (T pose): scale near 0.5 for a 1.5 m Wren. The pack ships two rigs: `glTF/` (its own clips) and `Humanoid Rig Versions/FBX/` (a humanoid rig meant for retargeting, use these with the Universal Animation Library).
 * Universal Animation Library: `UAL1_Standard.glb` holds the clips; `_RM` is the root motion version.
-* The free tiers have no well, no gate prop and no brazier: build the gate from Medieval Village `Wall_Arch` and wall pieces, use Kenney Survival Kit `campfire-stand` as the brazier, and skip the well if nothing fits (it is not required by any acceptance test).
+* The free tiers have no well, no gate prop and no brazier: build the gate from Medieval Village `Wall_Arch` and wall pieces, build the brazier as `scenes/props/ruin_brazier.tscn` (a Ruins `Column_Round_Short` with the Medieval Village Pack `Bonfire` on top), and skip the well if nothing fits (it is not required by any acceptance test).
 * Godot 4.7.2 headless import of every asset: exit 0, one engine message, `Condition "surfaces.is_empty()"` on `rpg-character-pack/Humanoid Rig Versions/FBX/Wizard.fbx` (an empty mesh node in that file; the model imports and the glTF version is clean). Log: `docs/evidence/setup-import-headless.txt`.
 * Files of Modeler categories (trees, rocks, pebbles, weapons, shields, lanterns, torches, candles, pots, vases, bottles, potions, bridges) were removed from the packs at setup on purpose.
 
-## kenney/survival-kit
+## quaternius/medieval-village-pack
 
-23 files.
+1 file (added 2026-11-23, measured in Godot 4.7.2 headless).
 
 | File | Size X x Y(up) x Z (m) | Bottom Y | Tris | Bones | Clips |
 | :-- | :-- | --: | --: | --: | :-- |
-| `GLB format/barrel-open.glb` | 0.236 x 0.344 x 0.236 | 0.0 | 380 | 0 |  |
-| `GLB format/barrel.glb` | 0.236 x 0.344 x 0.236 | 0.0 | 412 | 0 |  |
-| `GLB format/bedroll-frame.glb` | 0.272 x 0.148 x 0.608 | 0.0 | 100 | 0 |  |
-| `GLB format/bedroll-packed.glb` | 0.26 x 0.09 x 0.09 | 0.0 | 124 | 0 |  |
-| `GLB format/bedroll.glb` | 0.31 x 0.125 x 0.608 | -0.05 | 144 | 0 |  |
-| `GLB format/box-large-open.glb` | 0.25 x 0.306 x 0.5 | 0.0 | 156 | 0 |  |
-| `GLB format/box-large.glb` | 0.25 x 0.25 x 0.5 | 0.0 | 124 | 0 |  |
-| `GLB format/box-open.glb` | 0.25 x 0.306 x 0.25 | 0.0 | 156 | 0 |  |
-| `GLB format/box.glb` | 0.25 x 0.25 x 0.25 | 0.0 | 124 | 0 |  |
-| `GLB format/bucket.glb` | 0.144 x 0.192 x 0.144 | 0.0 | 68 | 0 |  |
-| `GLB format/campfire-fishing-stand.glb` | 0.395 x 0.276 x 0.253 | 0.0 | 100 | 0 |  |
-| `GLB format/campfire-pit.glb` | 0.278 x 0.109 x 0.269 | 0.0 | 305 | 0 |  |
-| `GLB format/campfire-stand.glb` | 0.41 x 0.281 x 0.124 | 0.0 | 76 | 0 |  |
-| `GLB format/fence-doorway.glb` | 0.5 x 0.517 x 0.048 | 0.0 | 108 | 0 |  |
-| `GLB format/fence.glb` | 0.5 x 0.517 x 0.043 | 0.0 | 48 | 0 |  |
-| `GLB format/resource-planks.glb` | 0.373 x 0.094 x 0.626 | 0.0 | 72 | 0 |  |
-| `GLB format/resource-wood.glb` | 0.205 x 0.062 x 0.087 | 0.0 | 64 | 0 |  |
-| `GLB format/signpost-single.glb` | 0.209 x 0.46 x 0.043 | 0.0 | 28 | 0 |  |
-| `GLB format/signpost.glb` | 0.214 x 0.46 x 0.043 | 0.0 | 44 | 0 |  |
-| `GLB format/tent-canvas-half.glb` | 0.561 x 0.491 x 0.561 | -0.0 | 136 | 0 |  |
-| `GLB format/tent-canvas.glb` | 0.561 x 0.491 x 0.561 | -0.0 | 148 | 0 |  |
-| `GLB format/tent.glb` | 0.561 x 0.491 x 0.561 | -0.0 | 124 | 0 |  |
-| `GLB format/workbench.glb` | 0.326 x 0.287 x 0.296 | 0.0 | 236 | 0 |  |
+| `FBX/Bonfire.fbx` | 0.407 x 0.112 x 0.362 | -0.033 | 602 | 0 |  |
+
+## quaternius/survival-pack
+
+1 file (added 2026-11-23, measured in Godot 4.7.2 headless). The bounding box includes the guy ropes, which reach far past the canvas along Z.
+
+| File | Size X x Y(up) x Z (m) | Bottom Y | Tris | Bones | Clips |
+| :-- | :-- | --: | --: | --: | :-- |
+| `FBX/Tent.fbx` | 14.58 x 10.324 x 24.868 | -0.176 | 788 | 0 |  |
+
+## quaternius/ultimate-platformer-pack
+
+1 file (added 2026-11-23, measured in Godot 4.7.2 headless).
+
+| File | Size X x Y(up) x Z (m) | Bottom Y | Tris | Bones | Clips |
+| :-- | :-- | --: | --: | --: | :-- |
+| `glTF/Arrow_Side.gltf` | 1.86 x 2.052 x 0.363 | 0.0 | 120 | 0 |  |
 
 ## quaternius/cute-animated-monsters
 
