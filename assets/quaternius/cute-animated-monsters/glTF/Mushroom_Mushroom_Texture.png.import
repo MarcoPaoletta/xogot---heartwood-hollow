@@ -3,9 +3,10 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cfgeakagafnmx"
-path="res://.godot/imported/Mushroom_Mushroom_Texture.png-ebf5fb98812c8492dd2d0d141ccbac16.ctex"
+path.s3tc="res://.godot/imported/Mushroom_Mushroom_Texture.png-ebf5fb98812c8492dd2d0d141ccbac16.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 generator_parameters={
 "md5": "4c88197a15a38116ea46fe6106015d7f"
@@ -14,11 +15,11 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/quaternius/cute-animated-monsters/glTF/Mushroom_Mushroom_Texture.png"
-dest_files=["res://.godot/imported/Mushroom_Mushroom_Texture.png-ebf5fb98812c8492dd2d0d141ccbac16.ctex"]
+dest_files=["res://.godot/imported/Mushroom_Mushroom_Texture.png-ebf5fb98812c8492dd2d0d141ccbac16.s3tc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/high_quality_mode=0
 compress/lossy_quality=0.7
@@ -43,4 +44,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=1
+detect_3d/compress_to=0

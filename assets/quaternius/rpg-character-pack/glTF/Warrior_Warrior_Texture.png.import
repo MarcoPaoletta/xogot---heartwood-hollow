@@ -3,9 +3,10 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://psafifuc68sw"
-path="res://.godot/imported/Warrior_Warrior_Texture.png-6cc4df2af4ad2fda214e72687fb28b3c.ctex"
+path.s3tc="res://.godot/imported/Warrior_Warrior_Texture.png-6cc4df2af4ad2fda214e72687fb28b3c.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 generator_parameters={
 "md5": "c65fc9e9869aad1ccda6f4e35820691b"
@@ -14,11 +15,11 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/quaternius/rpg-character-pack/glTF/Warrior_Warrior_Texture.png"
-dest_files=["res://.godot/imported/Warrior_Warrior_Texture.png-6cc4df2af4ad2fda214e72687fb28b3c.ctex"]
+dest_files=["res://.godot/imported/Warrior_Warrior_Texture.png-6cc4df2af4ad2fda214e72687fb28b3c.s3tc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/high_quality_mode=0
 compress/lossy_quality=0.7
@@ -43,4 +44,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=1
+detect_3d/compress_to=0
