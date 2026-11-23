@@ -82,7 +82,10 @@ def place(dst: np.ndarray, src: np.ndarray, at: float, gain: float = 1.0) -> Non
     if i >= len(dst):
         return
     n = min(len(src), len(dst) - i)
-    dst[i:i + n] += src[:n] * gain
+    chunk = src[:n] * gain
+    if n < len(src):
+        chunk = fade_out(chunk.copy(), 0.02)
+    dst[i:i + n] += chunk
 
 
 def modal(freqs, decays, gains, dur: float, excite: np.ndarray | None = None) -> np.ndarray:
@@ -93,7 +96,7 @@ def modal(freqs, decays, gains, dur: float, excite: np.ndarray | None = None) ->
         out += g * np.sin(2 * np.pi * f * t) * np.exp(-t / d)
     if excite is not None:
         out = signal.fftconvolve(out, excite)[: len(t)]
-    return out
+    return fade_out(out, 0.03)
 
 
 def pluck(freq: float, dur: float, seed: int, bright: float = 0.5, damp: float = 0.996) -> np.ndarray:
@@ -117,7 +120,7 @@ def pluck(freq: float, dur: float, seed: int, bright: float = 0.5, damp: float =
     out *= env_exp(n, 0.35 + 0.3 * (440 / freq), 0.001)
     # body resonance, like a small wooden instrument
     body = filt(sos_band(180, 2600, 1), out)
-    return 0.6 * out + 0.7 * body
+    return fade_out(0.6 * out + 0.7 * body, 0.03)
 
 
 def bell(freq: float, dur: float, tau: float = 0.6) -> np.ndarray:
@@ -133,7 +136,7 @@ def steelpan(freq: float, dur: float) -> np.ndarray:
     for k, g, d in [(1.0, 1.0, 0.55), (2.0, 0.6, 0.35), (3.0, 0.25, 0.22), (4.02, 0.12, 0.15)]:
         out += g * np.sin(2 * np.pi * freq * k * t + 0.3 * np.sin(2 * np.pi * 5 * t)) * np.exp(-t / d)
     out *= np.clip(t / 0.004, 0, 1)
-    return out
+    return fade_out(out, 0.03)
 
 
 def note(name: str) -> float:
@@ -161,7 +164,10 @@ def master(x: np.ndarray, rms_db: float, peak_db: float = -2.5) -> np.ndarray:
     x = np.asarray(x, dtype=np.float64)
     x = x - np.mean(x)
     x = fade_out(x, 0.008)
-    # trim trailing silence below -70 dB
+    # trim leading silence (keep 3 ms) and trailing silence below -70 dB, so a sound starts on its trigger
+    lead = np.nonzero(np.abs(x) > np.abs(x).max() * 10 ** (-40 / 20))[0]
+    if len(lead):
+        x = x[max(0, lead[0] - int(0.003 * SR)):]
     thr = np.abs(x).max() * 10 ** (-70 / 20)
     idx = np.nonzero(np.abs(x) > thr)[0]
     if len(idx):
